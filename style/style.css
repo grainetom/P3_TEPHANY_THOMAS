@@ -1,10 +1,10 @@
 @font-face {
 
   font-family: 'roboto';
-  src: url("/fonts/roboto/Roboto-Regular.ttf");}
+  src: url("../fonts/roboto/Roboto-Regular.ttf");}
  @font-face {
     font-family: 'Shrikhand';
-    src: url("/fonts/shrikhand/Shrikhand-Regular.ttf");
+    src: url("../fonts/shrikhand/Shrikhand-Regular.ttf");
 
 }
 @media (max-width: 640px) {
@@ -298,7 +298,7 @@ bottom:50px;
   font-family: roboto;
   font-size: 12px;
   display: flex;
-  
+
   background-color: white;
   border-radius: 10px;
   padding-left: 15px;
