@@ -149,9 +149,9 @@ a:link
 
  /* Boutons fonctionnement */
  .choisissez {
-
    display: flex;
-      background-color: white;
+   width:300px;
+   background-color: white;
    border-radius: 10px;
    padding-left: 15px;
    padding-top: 13px;
@@ -162,6 +162,7 @@ a:link
  }
  .composez{
   display: flex;
+  width:300px;
 
   background-color:white;
   border-radius: 10px;
@@ -178,6 +179,8 @@ a:link
  .degustez
  {
   display: flex;
+  width:300px;
+
   background-color:white;
   border-radius: 10px;
   padding-left: 15px;
@@ -198,7 +201,6 @@ a:link
   margin-top: 20px;
   background-color: rgb(246, 246, 246);
   font-size: 22px;
-
   margin-left: 10px;
   margin-right:0px;
   padding-top: 40px;
@@ -282,13 +284,13 @@ bottom:50px;
 /* background restaurants */
 .palette
 { 
+  width: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   border-radius: 15px 15px;
   margin-top: 20px;
-  padding: 20px;
-  
+  padding: 20px;  
   background-color: rgb(246, 246, 246);
 }
 /* Style Menu(entree plat dessert) */
@@ -304,7 +306,6 @@ bottom:50px;
   font-family: roboto;
   font-size: 12px;
   display: flex;
-
   background-color: white;
   border-radius: 10px;
   padding-left: 15px;
@@ -364,6 +365,7 @@ display: block;
 align-items: center;
 border-width: 0px;
 margin-top: 15px;
+
 }
 /* Nom du restaurant et changement de police */
 
@@ -379,7 +381,8 @@ margin-top: 15px;
 
 .entree1{
   display: flex;
-  flex-wrap: wrap;
+  
+  margin-left: 20px;
   font-size: 20px;
   font-weight: 900;
   
@@ -389,17 +392,21 @@ margin-top: 15px;
 /*  format et disposition entree2 */
 .entree2{
  display:flex;
- flex-wrap: wrap;
+  margin-left: 20px;
   font-size: 15px;
  font-weight: normal;
- padding: 5px;
+ 
 
 
 }
 
 /*  format et disposition prix*/
  .prix {
-   display: flex;
-   align-items:center;
-     font-weight: 900;
+   
+    display: flex;   
+    margin-top: 5px;
+    font-weight: 900;
+ 
+
+   
  }
