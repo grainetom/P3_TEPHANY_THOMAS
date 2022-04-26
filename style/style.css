@@ -296,24 +296,12 @@ bottom:50px;
 /* Style Menu(entree plat dessert) */
 .menu {
   font-family: 'roboto';
-  font-size: 20px;
+  font-size: 25px;
   border-bottom: 3px  solid lightgreen;
-  margin: 5px 15px 20px 50px;
+ 
 
 }
-/* format menu */
-.restaurant_menu  {
-  font-family: roboto;
-  font-size: 12px;
-  display: flex;
-  background-color: white;
-  border-radius: 10px;
-  padding-left: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  margin-right: 10px;
-  box-shadow: 5px 5px 5px gray;
-}
+
 /* couleur fond d'ecran et texte footer */
 .footeromf {
 
@@ -359,6 +347,26 @@ font-family: roboto;
   left:15px;
 
 }
+/* format menu */
+.restaurant_menu  {
+  display: flex ;
+  flex-wrap: nowrap;
+  font-family: roboto;
+  font-size: 12px;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-right: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px gray;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
 /* paramétrage image restaurants */
 .photoresto {
 display: block;
@@ -391,22 +399,25 @@ margin-top: 15px;
 
 /*  format et disposition entree2 */
 .entree2{
- display:flex;
+display: flex ;
+flex-wrap: nowrap;
   margin-left: 20px;
   font-size: 15px;
  font-weight: normal;
- 
-
-
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
 
 /*  format et disposition prix*/
  .prix {
    
-    display: flex;   
-    margin-top: 5px;
+  
     font-weight: 900;
- 
-
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    padding-right: 20px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
    
  }
