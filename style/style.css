@@ -14,8 +14,7 @@
 --tcolor: #99E2D0;
 font-family: 'roboto';
 color: black;
-margin: 0;
-padding: 0;
+
 }
 }
 #logo {
@@ -268,15 +267,27 @@ border-radius: 15px 15px 0 0;
 }
 
 .favori {
-
+display: flex;
 position: relative;
 top:-50px;
 left:200px;
 
 }
-.color2:hover {
+/* Effet couleur coeur (forum OC) */
+.fa-heart {
+  color: black;
+  background-color: white;
+  
+}
+
+.fa-heart::before{ 
+   
+  transition: color 1s ease-out;
+  font-weight:500;
+}
+.fa-heart:hover::before{
   color: red;
-  opacity: 1;
+  font-weight: bold;
   cursor: pointer;
 }
 .nom_restau {
@@ -397,10 +408,7 @@ font-family: roboto;
     margin-left: 20px;
   font-size: 20px;
   font-weight: 900;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  flex-grow: 1;
+ 
 }
 
 /*  format et disposition entree2 */
