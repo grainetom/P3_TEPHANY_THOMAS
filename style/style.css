@@ -7,15 +7,15 @@
     src: url("../fonts/shrikhand/Shrikhand-Regular.ttf");
 
 }
-@media (max-width: 480px) {
+@media (max-width: 640px) {
 .body {
 --pcolor: #9356DC;
 --scolor: #FF79DA;
 --tcolor: #99E2D0;
 font-family: 'roboto';
 color: black;
-margin:0;
-padding:0;
+margin: 0;
+padding: 0;
 }
 }
 #logo {
@@ -34,9 +34,8 @@ padding:0;
 
 /* champ recherche Paris Belleville */
 .recherche {
-  
   margin-top: 5px;
-  padding-left:75px;
+  padding-left:5px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -269,10 +268,16 @@ border-radius: 15px 15px 0 0;
 }
 
 .favori {
-position: relative;
-left:200px;
-bottom:50px;
 
+position: relative;
+top:-50px;
+left:200px;
+
+}
+.color2:hover {
+  color: red;
+  opacity: 1;
+  cursor: pointer;
 }
 .nom_restau {
   font-size: 5px;
@@ -353,7 +358,7 @@ font-family: roboto;
 }
 /* format menu */
 .restaurant_menu  {
-  display: flex ;
+ display: flex;
    font-family: roboto;
   font-size: 12px;
   background-color: white;
@@ -365,9 +370,7 @@ font-family: roboto;
   margin-right: 10px;
   margin-top: 10px;
   box-shadow: 5px 5px 5px gray;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+;
 
 
   
@@ -375,13 +378,8 @@ font-family: roboto;
 
 }
 /* paramétrage image restaurants */
-img .photoresto2 {
-display: block;
-align-items: center;
-border-width: 0px;
-margin-top: 15px;
 
-}
+
 /* Nom du restaurant et changement de police */
 
  .resopal  {
@@ -395,23 +393,27 @@ margin-top: 15px;
 /* format et disposition entree1 */
 
 .entree1{
-  display: flex;
-  
-  margin-left: 20px;
+  display: block;
+    margin-left: 20px;
   font-size: 20px;
   font-weight: 900;
-  
-  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
 }
 
 /*  format et disposition entree2 */
 .entree2{
-display: flex ;
+display: block ;
 flex-wrap: nowrap;
   margin-left: 20px;
   font-size: 15px;
  font-weight: normal;
- flex-wrap: nowrap;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ flex-grow: 1;
 
 }
 
