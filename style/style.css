@@ -77,10 +77,6 @@ padding:0;
        border-radius: 20px;
        border:none;
        box-shadow: 5px 5px 5px #c2c2c2;
-
-
-
-
    }
    /* Police pour restaurants h3 */
    h3 
@@ -150,6 +146,7 @@ a:link
  /* Boutons fonctionnement */
  .choisissez {
    display: flex;
+   align-items: center;
    width:300px;
    background-color: white;
    border-radius: 10px;
@@ -197,7 +194,7 @@ a:link
 
 
 .restaurant {
-
+ max-width: auto;
   margin-top: 20px;
   background-color: rgb(246, 246, 246);
   font-size: 22px;
@@ -292,12 +289,19 @@ bottom:50px;
   margin-top: 20px;
   padding: 20px;  
   background-color: rgb(246, 246, 246);
+  
+}
+/* images pour restau */
+
+.photoresto2 {
+  
 }
 /* Style Menu(entree plat dessert) */
 .menu {
   font-family: 'roboto';
   font-size: 25px;
   border-bottom: 3px  solid lightgreen;
+  
  
 
 }
@@ -350,11 +354,10 @@ font-family: roboto;
 /* format menu */
 .restaurant_menu  {
   display: flex ;
-  flex-wrap: nowrap;
-  font-family: roboto;
+   font-family: roboto;
   font-size: 12px;
-  display: flex;
   background-color: white;
+  width:auto;
   border-radius: 10px;
   padding-left: 15px;
   padding-top: 13px;
@@ -362,12 +365,17 @@ font-family: roboto;
   margin-right: 10px;
   margin-top: 10px;
   box-shadow: 5px 5px 5px gray;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 
+
+  
+  
+
 }
 /* paramétrage image restaurants */
-.photoresto {
+img .photoresto2 {
 display: block;
 align-items: center;
 border-width: 0px;
@@ -419,4 +427,22 @@ flex-wrap: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
    
+ }
+
+ /* Bouton mauve commande */
+ .commander
+ {
+  display: block;
+  margin :auto;
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding:10px 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border:none;
+  box-shadow: 5px 5px 5px #c2c2c2;
+
+
  }
