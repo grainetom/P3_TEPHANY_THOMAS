@@ -25,6 +25,11 @@ color: black;
        margin-right: auto;
 }
 
+/* Logo de chargement */
+
+
+
+
 .container {
    font-family: roboto;
     background-color: rgb(246, 246, 246);
@@ -33,10 +38,12 @@ color: black;
 
 /* champ recherche Paris Belleville */
 .recherche {
+  display:flex ;
   margin-top: 5px;
   padding-left:5px;
   padding-top: 10px;
   padding-bottom: 10px;
+  justify-content: center;
   width: 100%;
   height: 100%;
    background-color: rgb(234,234,234);
@@ -46,7 +53,7 @@ color: black;
  .texte
   {
     font-family: 'roboto';
-  
+
   }
 
   h1 {
@@ -77,7 +84,7 @@ color: black;
        box-shadow: 5px 5px 5px #c2c2c2;
    }
    /* Police pour restaurants h3 */
-   h3 
+   h3
    {
       font-size: 20px;
       font-family: 'roboto';
@@ -140,7 +147,23 @@ a:link
  {
   text-decoration:none;
  }
-
+ /* Fonctionnement mise en page flex */
+ .fonctionnementext {
+ font-family: roboto;
+  max-width: auto;
+  font-size: 22px;
+  font-weight:bold;
+  margin-left: 10px;
+  margin-right:0px;
+  padding-top: 40px;
+  padding-right:30px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+ }
+.fonctionnement {
+ display:flex;
+ align-items: center;
+}
  /* Boutons fonctionnement */
  .choisissez {
    display: flex;
@@ -197,7 +220,7 @@ a:link
   background-color: rgb(246, 246, 246);
   font-size: 22px;
   margin-left: 10px;
-  margin-right:0px; 
+  margin-right:0px;
   padding-top: 40px;
   padding-right:30px;
   padding-left: 20px;
@@ -218,7 +241,7 @@ a:link
   left: 70%;
 
 
-  
+
 
 }
 
@@ -288,19 +311,29 @@ border-radius: 15px 15px 0 0;
 .favori {
 display: flex;
 position: relative;
-top:-50px;
-left:200px;
+top:-40px;
+left:280px;
 
 }
+.favori2 {
+  display: flex;
+ position: relative;
+ width:25;
+ top:-25px;
+ left: 320px;
+
+}
+
+
 /* Effet couleur coeur (forum OC) */
 .fa-heart {
   color: black;
   background-color: white;
-  
+
 }
 
-.fa-heart::before{ 
-   
+.fa-heart::before{
+
   transition: color 1s ease-out;
   font-weight:500;
 }
@@ -315,16 +348,16 @@ left:200px;
 
 /* background restaurants */
 .palette
-{ 
+{
   width: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   border-radius: 15px 15px;
   margin-top: 20px;
-  padding: 20px;  
+  padding: 20px;
   background-color: rgb(246, 246, 246);
-  
+
 }
 /* images pour restau */
 
@@ -334,8 +367,8 @@ left:200px;
   font-family: 'roboto';
   font-size: 25px;
   border-bottom: 3px  solid lightgreen;
-  
- 
+
+
 
 }
 
@@ -358,7 +391,7 @@ left:200px;
 
 /* footer avec séparation de 2 lignes entre chaque texte. */
 .texte_footer {
-   
+
 font-family: roboto;
  line-height: 2;
  padding-top: 25px;
@@ -401,8 +434,8 @@ font-family: roboto;
 ;
 
 
-  
-  
+
+
 
 }
 /* paramétrage image restaurants */
@@ -425,7 +458,7 @@ font-family: roboto;
     margin-left: 20px;
   font-size: 20px;
   font-weight: 900;
- 
+
 }
 
 /*  format et disposition entree2 */
@@ -435,25 +468,23 @@ flex-wrap: nowrap;
   margin-left: 20px;
   font-size: 15px;
  font-weight: normal;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- flex-grow: 1;
+  text-overflow: ellipsis;
+
 
 }
 
 /*  format et disposition prix*/
  .prix {
-   
-  
+
+
     font-weight: 900;
     display: flex;
     align-items: flex-end;
     margin-left: auto;
-    padding-right: 20px; 
+    padding-right: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
-   
+
  }
 
  /* Bouton mauve commande */
