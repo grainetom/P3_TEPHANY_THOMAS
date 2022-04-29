@@ -197,13 +197,32 @@ a:link
   background-color: rgb(246, 246, 246);
   font-size: 22px;
   margin-left: 10px;
-  margin-right:0px;
+  margin-right:0px; 
   padding-top: 40px;
   padding-right:30px;
   padding-left: 20px;
   padding-bottom: 5px;
+}
+/* Ajout rectangle nouveau */
+
+.nouveau {
+  font-family: roboto;
+  display: flex;
+  justify-content: center;
+    color: green;
+  background: lightgreen;
+  font-size: 10px;
+  width:60px;
+  position: relative;
+    top: 200px;
+  left: 70%;
+
+
+  
 
 }
+
+
  .restaurant1{
 
   margin-top: 20px;
@@ -286,7 +305,7 @@ left:200px;
   font-weight:500;
 }
 .fa-heart:hover::before{
-  color: red;
+  color:#9356DC;
   font-weight: bold;
   cursor: pointer;
 }
@@ -309,9 +328,7 @@ left:200px;
 }
 /* images pour restau */
 
-.photoresto2 {
-  
-}
+
 /* Style Menu(entree plat dessert) */
 .menu {
   font-family: 'roboto';
