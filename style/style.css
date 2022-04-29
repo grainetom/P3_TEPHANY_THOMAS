@@ -215,7 +215,7 @@ a:link
 
 
 .restaurant {
- max-width: auto;
+
   margin-top: 20px;
   background-color: rgb(246, 246, 246);
   font-size: 22px;
@@ -312,7 +312,7 @@ border-radius: 15px 15px 0 0;
 display: flex;
 position: relative;
 top:-40px;
-left:280px;
+left:250px;
 
 }
 .favori2 {
