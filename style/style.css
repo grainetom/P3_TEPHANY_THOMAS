@@ -150,7 +150,7 @@ a:link
  /* Fonctionnement mise en page flex */
  .fonctionnementext {
  font-family: roboto;
-  max-width: auto;
+
   font-size: 22px;
   font-weight:bold;
   margin-left: 10px;
@@ -244,6 +244,13 @@ a:link
 
 
 }
+/* Restaurant no wrap */
+.restaurant_menu{
+  white-space: nowrap;
+  overflow: hidden;
+  
+  
+}
 
 
  .restaurant1{
@@ -291,6 +298,8 @@ a:link
 
 }
 
+
+
 img{
 max-width: 100%;
 height:auto;
@@ -318,7 +327,6 @@ left:250px;
 .favori2 {
   display: flex;
  position: relative;
- width:25;
  top:-25px;
  left: 320px;
 
@@ -358,6 +366,7 @@ left:250px;
   padding: 20px;
   background-color: rgb(246, 246, 246);
 
+
 }
 /* images pour restau */
 
@@ -367,7 +376,8 @@ left:250px;
   font-family: 'roboto';
   font-size: 25px;
   border-bottom: 3px  solid lightgreen;
-
+  font-weight: normal;
+;
 
 
 }
@@ -451,24 +461,26 @@ font-family: roboto;
 
 }
 
+/* txt overflow entree1 et 2 */
+.restaurant_menu
 /* format et disposition entree1 */
 
 .entree1{
   display: block;
-    margin-left: 20px;
+  margin-left: 20px;
   font-size: 20px;
   font-weight: 900;
 
 }
 
+
+
+
 /*  format et disposition entree2 */
 .entree2{
-display: block ;
-flex-wrap: nowrap;
+  display: block;
   margin-left: 20px;
   font-size: 15px;
- font-weight: normal;
-  text-overflow: ellipsis;
 
 
 }
@@ -482,8 +494,7 @@ flex-wrap: nowrap;
     align-items: flex-end;
     margin-left: auto;
     padding-right: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
 
  }
 
