@@ -1,42 +1,76 @@
 @font-face {
 
   font-family: 'roboto';
-  src: url("../fonts/roboto/Roboto-Regular.ttf");}
- @font-face {
-    font-family: 'Shrikhand';
-    src: url("../fonts/shrikhand/Shrikhand-Regular.ttf");
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("../fonts/shrikhand/Shrikhand-Regular.ttf");
 
 }
-/* Version Desktop */
-@media (max-width: 1950px) {
 
-.body {
-margin: 0;
-padding: 0;
-font-family: "roboto", sans sherif;
-min-width: 992px;
-max-width: 1950px;
-/* Version mobile */
+/* Version Desktop */
+@media (min-width: 992px) {
+
+  .restaurant {
+    display: flex;
+    width: 90%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 3rem;
+    white-space: nowrap;
+  }
+
+  .body {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans sherif;
+    min-width: 992px;
+    max-width: 1950px;
+
+  }
+
+  .loader {
+    border: 16px solid #9356DC; /* Light grey */
+    border-top: 16px solid #FF79DA;/* Blue */
+    border-radius: 50%;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    position :absolute;
+    left:45%;
+    animation: spin 2s linear 15s;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+ 
+
+  /* Version mobile */
 
   @media screen and (max-width: 768px) {
     body {
-      min-width: 350px;
+ 
       max-width: 768px;
     }
 
 
 
 
-}
+  }
 }
 
 
 #logo {
-       display: block;
-       width:50%;
-       margin-top: 15px;
-       margin-left: auto;
-       margin-right: auto;
+  display: block;
+  width: 50%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Logo de chargement */
@@ -45,158 +79,164 @@ max-width: 1950px;
 
 
 .container {
-   font-family: roboto;
-    background-color: rgb(246, 246, 246);
-    padding-bottom: 20px;
+  font-family: roboto;
+  background-color: rgb(246, 246, 246);
+  padding-bottom: 20px;
 }
 
 /* champ recherche Paris Belleville */
 .recherche {
-  display:flex ;
+  display: flex;
   margin-top: 5px;
-  padding-left:5px;
+  padding-left: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: center;
   width: 100%;
   height: 100%;
-   background-color: rgb(234,234,234);
+  background-color: rgb(234, 234, 234);
   border-top: 2px solid lightgrey;
 }
 
- .texte
-  {
-    font-family: 'roboto';
+.texte {
+  font-family: 'roboto';
 
-  }
+}
 
-  h1 {
-    text-align: center;
-        font-size : 20px;
-        font-weight: bolder;
+h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
 
-  }
+}
 
-  p {
-      text-align: center;
-      font-size: 15px;
-    color:grey;
-  }
+p {
+  text-align: center;
+  font-size: 15px;
+  color: grey;
+}
+
 /* Bouton mauve explorer nos resaurants */
-  .explorer
-   {
-    display: block;
-       margin :auto;
-       background: linear-gradient(to right, #FF79DA, #9356DC);
-       color: white;
-       font-size: 12px;
-       font-weight: bold;
-       padding:10px 20px;
-       margin-top: 20px;
-       border-radius: 20px;
-       border:none;
-       box-shadow: 5px 5px 5px #c2c2c2;
-   }
-   /* Police pour restaurants h3 */
-   h3
-   {
-      font-size: 20px;
-      font-family: 'roboto';
-       text-align: left;
-       margin-left: 10px
-   }
+.explorer {
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 5px 5px #c2c2c2;
+}
+
+/* Police pour restaurants h3 */
+h3 {
+  font-size: 20px;
+  font-family: 'roboto';
+  text-align: left;
+  margin-left: 10px
+}
 
 
 /* Logo fonctionnemnt */
 
- i {
-   color:grey;
-   width:100%;
-   padding-left: 15px;
-   padding-right: 25px;
-   width: 0;
-   align-items: left;
+i {
+  color: grey;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 25px;
+  width: 0;
+  align-items: left;
 
- }
-
-
- .color {
-  color:grey;}
-  li {
-   text-decoration: none;
-   margin:1px;
- }
-.color2  {
-  color:black;
 }
 
- ol {
+
+.color {
+  color: grey;
+}
+
+li {
+  text-decoration: none;
+  margin: 1px;
+}
+
+.color2 {
+  color: black;
+}
+
+ol {
 
   list-style: none;
   counter-reset: texte;
 
- }
+}
 
- li::before {
-   background-color: #9356DC;
-   align-items: center;
-   color:white;
-   font-size: 15px;
-   border-radius: 25px;
-   padding-left: 5px;
-   padding-right: 5px;
-   counter-increment: texte 1 ;
-   content:counter(texte) " ";
-   position: relative;
+li::before {
+  background-color: #9356DC;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  border-radius: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  counter-increment: texte 1;
+  content: counter(texte) " ";
+  position: relative;
   left: -20px;
 
- }
-
- li:hover {
-  transform: scale(1.01);
-  color:black;
-  background-color: rgb(233,217,250);
 }
-a:link
- {
-  text-decoration:none;
- }
- /* Fonctionnement mise en page flex */
- .fonctionnementext {
- font-family: roboto;
+
+li:hover {
+  transform: scale(1.01);
+  color: black;
+  background-color: rgb(233, 217, 250);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* Fonctionnement mise en page flex */
+.fonctionnementext {
+  font-family: roboto;
 
   font-size: 22px;
-  font-weight:bold;
+  font-weight: bold;
   margin-left: 10px;
-  margin-right:0px;
+  margin-right: 0px;
   padding-top: 40px;
-  padding-right:30px;
+  padding-right: 30px;
   padding-left: 20px;
   padding-bottom: 5px;
- }
+}
+
 .fonctionnement {
   align-items: center;
- 
+
 }
- /* Boutons fonctionnement */
- .choisissez {
-   display: flex;
-   align-items: center;
-   width:300px;
-   background-color: white;
-   border-radius: 10px;
-   padding-left: 15px;
-   padding-top: 13px;
-   padding-bottom: 13px;
-   box-shadow: 5px 5px 5px gray;
 
-
- }
- .composez{
+/* Boutons fonctionnement */
+.choisissez {
   display: flex;
-  width:300px;
+  align-items: center;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: 5px 5px 5px gray;
 
-  background-color:white;
+
+}
+
+.composez {
+  display: flex;
+  width: 300px;
+
+  background-color: white;
   border-radius: 10px;
   padding-left: 15px;
   padding-top: 13px;
@@ -206,14 +246,13 @@ a:link
 
 
 
- }
+}
 
- .degustez
- {
+.degustez {
   display: flex;
-  width:300px;
+  width: 300px;
 
-  background-color:white;
+  background-color: white;
   border-radius: 10px;
   padding-left: 15px;
   padding-top: 13px;
@@ -221,15 +260,16 @@ a:link
   margin-top: 10px;
   box-shadow: 5px 5px 5px gray;
 
- }
+}
+
 .texte {
-  color:black;
+  color: black;
 }
 
 /* Reglages images restaurants */
 
 .photo_resto {
- 
+
   object-fit: fill;
   border-radius: 15px 15px 0 0;
   object-position: center bottom;
@@ -242,67 +282,66 @@ a:link
   background-color: rgb(246, 246, 246);
   font-size: 22px;
   margin-left: 10px;
-  margin-right:0px;
+  margin-right: 0px;
   padding-top: 40px;
-  padding-right:30px;
+  padding-right: 30px;
   padding-left: 20px;
   padding-bottom: 5px;
- 
+
 }
+
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
-   .nouveau{
+.nouveau {
   font-family: roboto;
-   color: green;
+  color: green;
   background: lightgreen;
   font-size: 25px;
-  position:sticky;
+  position: relative;
+  top:10%;
  
 
 
-  }
-   .nouveau2{
+
+}
+
+.nouveau2 {
   font-family: roboto;
   color: green;
   background: lightgreen;
   font-size: 15px;
-  position:relative;
-  bottom:250px;
-  left:250px;
  
 
-  }
-  
+
+}
+
 
 /* Restaurant no wrap */
 .entree1 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width:200px;
-  
+  width: 200px;
+
 }
+
 .entree2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width:200px;
-  
+  width: 200px;
+
 }
 
- .restaurant1{
+.restaurant1 {
 
+  
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
-  padding-bottom: 15px;
   border-radius: 15px;
   margin-bottom: 10px;
   box-shadow: 5px 5px 5px gray
-
-
-
-
 }
 
 
@@ -316,9 +355,8 @@ a:link
   padding-bottom: 10px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px gray
-
-
 }
+
 .restaurant3 {
 
   margin-top: 20px;
@@ -327,9 +365,8 @@ a:link
 
   border-radius: 15px;
   box-shadow: 5px 5px 5px gray
-
-
 }
+
 .restaurant4 {
 
   margin-top: 20px;
@@ -337,40 +374,38 @@ a:link
   font-size: 22px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px gray
-
 }
 
 
 
-img{
-max-width: 100%;
-height:auto;
-border-radius: 15px 15px 0 0;
+img {
+  max-width: 100%;
+  
 
 }
-.metro
-{
- font-family: 'roboto';
- margin-left: 10px;
- font-size: 20px;
- font-weight: 100;
- margin-bottom: 0px;
- margin-top: -20px;
- color:black;
+
+.metro {
+  font-family: 'roboto';
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  margin-top: -20px;
+  color: black;
 }
 
-.favori {
-display: flex;
-position: relative;
-top:-40px;
-left:250px;
-
-}
+ .favori {
+  
+  display: inline-flex;
+  align-content: flex-end;
+  align-items:flex-start;
+ }
 .favori2 {
   display: flex;
- position: relative;
- top:-25px;
- left: 320px;
+  align-content:normal;
+  align-items:flex-end;
+  justify-content:flex-end;
+  
 
 }
 
@@ -382,24 +417,24 @@ left:250px;
 
 }
 
-.fa-heart::before{
+.fa-heart::before {
 
   transition: color 1s ease-out;
-  font-weight:500;
+  font-weight: 500;
 }
-.fa-heart:hover::before{
-  color:#9356DC;
+
+.fa-heart:hover::before {
+  color: #9356DC;
   font-weight: bold;
   cursor: pointer;
 }
+
 .nom_restau {
   font-size: 5px;
 }
 
 /* background restaurants */
-.palette
-{
-  width: auto;
+.palette {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -409,53 +444,56 @@ left:250px;
 
 
 }
+
 /* images pour restau */
 
 
 /* Style Menu(entree plat dessert) */
 .menu {
- 
+
   border-bottom: 3px solid lightgreen;
   width: 45px;
-   
-
-  }
 
 
-  
-  
+}
+
+
+
+
 /* couleur fond d'ecran et texte footer */
 .footeromf {
 
-  background-color: rgb(53,53,53);
-  color:white;
+  background-color: rgb(53, 53, 53);
+  color: white;
 }
+
 /* Chnagement de couleur et de taille du logo footer */
-.logo_footer{
+.logo_footer {
 
   filter: invert(100);
   padding-top: 15px;
   padding-left: 25px;
   padding-bottom: 25px;
-  width:25%;
+  width: 25%;
 
 }
 
 /* footer avec séparation de 2 lignes entre chaque texte. */
 .texte_footer {
 
-font-family: roboto;
- line-height: 2;
- padding-top: 25px;
- padding-bottom: 5px;
- padding-left:25px;
+  font-family: roboto;
+  line-height: 2;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  padding-left: 25px;
 
 
 }
+
 /* réglages logo font awesome */
 
 
-.texte_footer2{
+.texte_footer2 {
   font-family: 'roboto';
   padding-left: 70px;
   line-height: 2;
@@ -464,18 +502,19 @@ font-family: roboto;
 /* Menu Restaurant header fleche gauche pour retour */
 .retour {
   color: black;
-  position:absolute;
-  top:20px;
-  left:15px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
 
 }
+
 /* format menu */
-.restaurant_menu  {
- display: flex;
-   font-family: roboto;
+.restaurant_menu {
+  display: flex;
+  font-family: roboto;
   font-size: 12px;
   background-color: white;
-  width:330px;
+  width: 330px;
   border-radius: 10px;
 
   padding-top: 13px;
@@ -483,25 +522,24 @@ font-family: roboto;
   margin-right: 15px;
   margin-top: 10px;
   box-shadow: 5px 5px 5px gray
-
-
 }
+
 /* paramétrage bouton animé du menu */
 .cercle .fa-check-circle {
   display: flex;
   color: var(lightgreen);
-    justify-content: center;
+  justify-content: center;
   align-items: center;
 }
 
 
 /* Nom du restaurant et changement de police */
 
- .resopal  {
+.resopal {
   font-family: 'Shrikhand';
-    color:black;
+  color: black;
 
-    font-size: 27px;
+  font-size: 27px;
 
 }
 
@@ -509,7 +547,7 @@ font-family: roboto;
 .restaurant_menu
 /* format et disposition entree1 */
 
-.entree1{
+.entree1 {
   display: block;
   margin-left: 20px;
   font-size: 20px;
@@ -521,7 +559,7 @@ font-family: roboto;
 
 
 /*  format et disposition entree2 */
-.entree2{
+.entree2 {
   display: block;
   margin-left: 20px;
   font-size: 15px;
@@ -530,40 +568,39 @@ font-family: roboto;
 }
 
 /*  format et disposition prix*/
- .prix {
+.prix {
 
 
-    font-weight: 900;
-    display: flex;
-    align-items: flex-end;
-    margin-left: auto;
-    padding-right: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  padding-right: 20px;
 
 
- }
+}
 
- /* Bouton mauve commande */
- .commander
- {
+/* Bouton mauve commande */
+.commander {
   display: block;
-  margin :auto;
+  margin: auto;
   background: linear-gradient(to right, #FF79DA, #9356DC);
   color: white;
   font-size: 12px;
   font-weight: bold;
-  padding:10px 20px;
+  padding: 10px 20px;
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 20px;
-  border:none;
+  border: none;
   box-shadow: 5px 5px 5px #c2c2c2;
 
- }
-.anima {
- visibility:visible;
 }
 
-.restaurant_menu:hover{
+.anima {
+  visibility: visible;
+}
+
+.restaurant_menu:hover {
   background-color: lightgray;
 }
-
