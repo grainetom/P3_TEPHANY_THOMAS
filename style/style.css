@@ -316,7 +316,7 @@ a:link {
 }
 
 
-/* Restaurant no wrap */
+/* Restaurant no wrap  (...)*/
 .entree1 {
   white-space: nowrap;
   overflow: hidden;
@@ -335,7 +335,8 @@ a:link {
 
 .restaurant1 {
 
-  
+  display:flex ;
+  flex-direction: column;
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
@@ -348,8 +349,10 @@ a:link {
 
 .restaurant2 {
 
-
+  display:flex ;
+  flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 10px;
   background-color: white;
   font-size: 22px;
   padding-bottom: 10px;
@@ -358,20 +361,32 @@ a:link {
 }
 
 .restaurant3 {
+  
 
+
+  display:flex ;
+  flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 10px;
+
   background-color: white;
   font-size: 22px;
-
+  padding-bottom: 10px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px gray
 }
 
+
 .restaurant4 {
 
+  display:flex ;
+  flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 10px;
+
   background-color: white;
   font-size: 22px;
+  padding-bottom: 10px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px gray
 }
@@ -396,9 +411,9 @@ img {
 
  .favori {
   
-  display: inline-flex;
-  align-content: flex-end;
-  align-items:flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
  }
 .favori2 {
   display: flex;
