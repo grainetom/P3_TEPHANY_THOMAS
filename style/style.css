@@ -13,44 +13,78 @@
 
 
 
-  .restaurant {
-    display: flex;
-    flex-direction: column;
+.restaurant {
+  display: flex;
+  flex-direction: column;
+}
+.demo {
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: justify;
+}
+.custom-loading-spinner {
+  cursor: progress;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.custom-loading-spinner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  overflow: hidden;
+  background: #0b0b0b;
+  opacity: 0.6;
+}
+.custom-loading-spinner::after {
+  box-sizing: border-box;
+  z-index: 10002;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  border: 3px solid #9356DC;
+  border-top: 3px solid #FF79DA;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: custom-loading 1s linear 15s;
+}
+@keyframes custom-loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .loader {
-    border: 16px solid #9356DC; /* Light grey */
-    border-top: 16px solid #FF79DA;/* Blue */
-    border-radius: 50%;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    position :absolute;
-    left:45%;
-    animation: spin 2s linear 15s;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
- 
-
-  /* Version mobile */
-
-  @media screen and (max-width: 768px) {
-    body {
- 
-      font-family: 'roboto';
-
-    }
-
-
-
-
+  100% {
+    transform: rotate(360deg);
   }
 }
+
+
+
+/* Version mobile */
+
+@media screen and (max-width: 768px) {
+  body {
+
+    font-family: 'roboto';
+
+  }
+
+
+
+
+}
+
 
 
 #logo {
@@ -196,10 +230,7 @@ a:link {
   padding-bottom: 5px;
 }
 
-.fonctionnement {
 
-
-}
 
 /* Boutons fonctionnement */
 .choisissez {
@@ -288,12 +319,13 @@ a:link {
   font-size: 15px;
   position: relative;
   bottom: 220px;
-  left:250px;
- 
+  left: 250px;
+
 
 
 
 }
+
 .nouveau2 {
   width: fit-content;
   display: flex;
@@ -306,8 +338,8 @@ a:link {
   font-size: 15px;
   position: relative;
   bottom: 270px;
-  left:250px;
- 
+  left: 250px;
+
 
 
 }
@@ -332,7 +364,7 @@ a:link {
 
 .restaurant1 {
 
- 
+
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
@@ -346,7 +378,7 @@ a:link {
 
 .restaurant2 {
 
- 
+
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
@@ -356,10 +388,10 @@ a:link {
 }
 
 .restaurant3 {
-  
 
 
-  
+
+
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
@@ -371,7 +403,7 @@ a:link {
 
 .restaurant4 {
 
- 
+
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
@@ -384,7 +416,7 @@ a:link {
 
 img {
   max-width: 100%;
-  
+
 
 }
 
@@ -399,22 +431,22 @@ img {
   color: black;
 }
 
- .favori{
-  
+.favori {
   display: flex;
   flex-direction: row;
-  justify-content:end;
-  align-content:flex-start;
+  justify-content: end;
+  align-content: flex-start;
   align-content: flex-end;
-  position :relative;
-  left :150px;
- }
+  position: relative;
+  left: 150px;
+}
+
 .favori2 {
   display: flex;
-  align-content:normal;
-  align-items:flex-end;
-  justify-content:flex-end;
-  
+  align-content: normal;
+  align-items: flex-end;
+  justify-content: flex-end;
+
 
 }
 
