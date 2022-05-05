@@ -18,7 +18,7 @@
 
 /* Version mobile */
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 600px) {
   body {
 
     font-family: 'roboto';
@@ -51,7 +51,7 @@
     z-index: 10001;
     overflow: hidden;
     background: #0b0b0b;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 .custom-loading-spinner::after {
     box-sizing: border-box;
@@ -61,16 +61,19 @@
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #3498db;
+    border: 3px solid #9356DC;
+    border-top: 3px solid #FF79DA;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: custom-loading 1s linear infinite;
+    animation: custom-loading 1s linear 5;
+    animation-fill-mode: forwards;
 }
+
 @keyframes custom-loading {
     0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg);
+visibility: hidden;    }
 }
 
 
