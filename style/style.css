@@ -17,6 +17,20 @@
   display: flex;
   flex-direction: column;
 }
+
+
+
+
+/* Version mobile */
+
+@media screen and (max-width: 768px) {
+  body {
+
+    font-family: 'roboto';
+
+}
+
+/* Loading Spinner */
 .demo {
   width: 200px;
   margin: 0 auto;
@@ -52,7 +66,7 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: custom-loading 1s linear 15s;
+  animation: custom-loading 1s  steps 25s;
 }
 @keyframes custom-loading {
   0% { transform: rotate(0deg); }
@@ -68,18 +82,6 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-/* Version mobile */
-
-@media screen and (max-width: 768px) {
-  body {
-
-    font-family: 'roboto';
-
-  }
-
 
 
 
@@ -644,4 +646,5 @@ img {
 
 .restaurant_menu:hover {
   background-color: lightgray;
+}
 }
