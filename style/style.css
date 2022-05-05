@@ -10,25 +10,12 @@
 
 }
 
-/* Version Desktop */
-@media (min-width: 992px) {
+
+
 
   .restaurant {
     display: flex;
-    width: 90%;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 3rem;
-    white-space: nowrap;
-  }
-
-  .body {
-    margin: 0;
-    padding: 0;
-    font-family: "roboto", sans sherif;
-    min-width: 992px;
-    max-width: 1950px;
-
+    flex-direction: column;
   }
 
   .loader {
@@ -55,7 +42,8 @@
   @media screen and (max-width: 768px) {
     body {
  
-      max-width: 768px;
+      font-family: 'roboto';
+
     }
 
 
@@ -78,11 +66,7 @@
 
 
 
-.container {
-  font-family: roboto;
-  background-color: rgb(246, 246, 246);
-  padding-bottom: 20px;
-}
+
 
 /* champ recherche Paris Belleville */
 .recherche {
@@ -213,7 +197,7 @@ a:link {
 }
 
 .fonctionnement {
-  align-items: center;
+
 
 }
 
@@ -293,23 +277,36 @@ a:link {
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
 .nouveau {
+  width: fit-content;
+  display: flex;
+  display: inline-block;
   font-family: roboto;
+  padding: 1px 1px;
+  margin: 5px;
   color: green;
-  background: lightgreen;
-  font-size: 25px;
+  background-color: lightgreen;
+  font-size: 15px;
   position: relative;
-  top:10%;
+  bottom: 220px;
+  left:250px;
  
 
 
 
 }
-
 .nouveau2 {
+  width: fit-content;
+  display: flex;
+  display: inline-block;
   font-family: roboto;
+  padding: 1px 1px;
+  margin: 5px;
   color: green;
-  background: lightgreen;
+  background-color: lightgreen;
   font-size: 15px;
+  position: relative;
+  bottom: 270px;
+  left:250px;
  
 
 
@@ -335,13 +332,13 @@ a:link {
 
 .restaurant1 {
 
-  display:flex ;
-  flex-direction: column;
+ 
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
+  padding-bottom: 10px;
+
   border-radius: 15px;
-  margin-bottom: 10px;
   box-shadow: 5px 5px 5px gray
 }
 
@@ -349,10 +346,8 @@ a:link {
 
 .restaurant2 {
 
-  display:flex ;
-  flex-direction: column;
+ 
   margin-top: 20px;
-  margin-bottom: 10px;
   background-color: white;
   font-size: 22px;
   padding-bottom: 10px;
@@ -364,11 +359,8 @@ a:link {
   
 
 
-  display:flex ;
-  flex-direction: column;
+  
   margin-top: 20px;
-  margin-bottom: 10px;
-
   background-color: white;
   font-size: 22px;
   padding-bottom: 10px;
@@ -379,11 +371,8 @@ a:link {
 
 .restaurant4 {
 
-  display:flex ;
-  flex-direction: column;
+ 
   margin-top: 20px;
-  margin-bottom: 10px;
-
   background-color: white;
   font-size: 22px;
   padding-bottom: 10px;
@@ -400,6 +389,7 @@ img {
 }
 
 .metro {
+  display: flex;
   font-family: 'roboto';
   margin-left: 10px;
   font-size: 20px;
@@ -409,11 +399,15 @@ img {
   color: black;
 }
 
- .favori {
+ .favori{
   
   display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
+  flex-direction: row;
+  justify-content:end;
+  align-content:flex-start;
+  align-content: flex-end;
+  position :relative;
+  left :150px;
  }
 .favori2 {
   display: flex;
