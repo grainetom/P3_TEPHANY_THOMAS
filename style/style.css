@@ -472,18 +472,8 @@ img {
 }
 
 /* background restaurants */
-.palette {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  border-radius: 15px 15px;
-  padding: 20px;
-  background-color: rgb(246, 246, 246);
 
 
-}
-
-/* images pour restau */
 
 
 /* Style Menu(entree plat dessert) */
@@ -494,6 +484,71 @@ img {
 
 
 }
+
+/* Animation Menus  */
+
+.restaurant_menu:hover .compo_menu_check_icon {
+  cursor: pointer;
+  transform: translateX(-75%);
+  transition: ease-in-out 300ms;
+  margin-left: 1rem;
+  opacity: 1;
+}
+.restaurant_menu:hover .compo_menu_check_icon i {
+  transform: rotate(360deg) translateX(-5%);
+  transition: ease-out 600ms;
+}
+.restaurant_menu:nth-child(1) {
+  animation: apparition 2s backwards;
+}
+
+.restaurant_menu:nth-child(3) {
+  animation: apparition 2s 0.2s backwards;
+}
+
+.restaurant_menu:nth-child(4) {
+  animation: apparition 2s 0.4s backwards;
+}
+
+.restaurant_menu:nth-child(5) {
+  animation: apparition 2s 0.6s backwards;
+}
+
+.restaurant_menu:nth-child(6) {
+  animation: apparition 2s 0.6s backwards;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+  
+.compo_menu_check_icon {
+  position: relative;
+  opacity: 0;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  background-color: #99e2d0;
+  border-top-right-radius:10px;
+  border-bottom-right-radius: 10px;
+
+}
+  .compo_menu_check_icon :before {
+    
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0.3rem;
+    color: #99e2d0;
+  }
 
 
 
@@ -548,28 +603,29 @@ img {
 
 /* format menu */
 .restaurant_menu {
-  display: flex;
   font-family: roboto;
-  font-size: 12px;
   background-color: white;
-  width: 330px;
+    display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  width: 70%;
   border-radius: 10px;
-
-  padding-top: 13px;
-  padding-bottom: 13px;
-  margin-right: 15px;
-  margin-top: 10px;
-  box-shadow: 5px 5px 5px gray
+  padding: 0.8rem;
+  margin: 1rem;
+  margin-left: 50px;
+  box-shadow: 5px 5px 5px gray;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-/* paramétrage bouton animé du menu */
+/* paramétrage bouton animé du menu
 .cercle .fa-check-circle {
   display: flex;
   color: var(lightgreen);
   justify-content: center;
   align-items: center;
 }
-
+ */
 
 /* Nom du restaurant et changement de police */
 
@@ -637,8 +693,4 @@ img {
 
 .anima {
   visibility: visible;
-}
-
-.restaurant_menu:hover {
-  background-color: lightgray;
 }
