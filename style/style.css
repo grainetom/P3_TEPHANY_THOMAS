@@ -22,6 +22,7 @@
   body {
 
     font-family: 'roboto';
+    background-color: #f6f6f6;
 
   }
   .restaurant {
@@ -304,42 +305,27 @@ a:link {
 
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
-.nouveau {
-  width: fit-content;
-  display: flex;
+.nouveau{
+  align-content: flex-end;
   display: inline-block;
-  font-family: roboto;
-  padding: 1px 1px;
+  border: 1px solid #99e299;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  border-radius: 2px;
+  padding: 1px 10px;
   margin: 5px;
-  color: green;
-  background-color: lightgreen;
-  font-size: 15px;
-  position: relative;
-  bottom: 220px;
-  left: 250px;
+  z-index: auto;
+  font-weight: 600;
+  z-index: 1;
+  position: absolute;
+  right: 50px;
 
 
 
 
 }
 
-.nouveau2 {
-  width: fit-content;
-  display: flex;
-  display: inline-block;
-  font-family: roboto;
-  padding: 1px 1px;
-  margin: 5px;
-  color: green;
-  background-color: lightgreen;
-  font-size: 15px;
-  position: relative;
-  bottom: 270px;
-  left: 250px;
 
-
-
-}
 
 
 /* Restaurant no wrap  (...)*/
@@ -432,10 +418,10 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-content: flex-start;
+
   align-content: flex-end;
-  position: relative;
-  left: 150px;
+  position: absolute;
+  right:50px;
 }
 
 .favori2 {
@@ -531,14 +517,17 @@ img {
  
   
 .compo_menu_check_icon {
+  box-sizing: border-box;
+  padding: 0 ;
   position: relative;
   opacity: 0;
   display: flex;
-  justify-content:end;
+  justify-content:center;
   align-items: center;
   background-color: #99e2d0;
   border-top-right-radius:10px;
   border-bottom-right-radius: 10px;
+  
 
 }
     /* bouton check position et format */
@@ -549,7 +538,6 @@ img {
     background-color: white;
     padding: 0px;
     color: #99e2d0;
-    opacity: 1;
   }
 
 
@@ -570,13 +558,16 @@ img {
 .restaurant_menu {
   font-family: roboto;
   background-color: white;
-    display: flex;
-  justify-content:center;
+  display: flex;
+  justify-content:space-between;
+  margin:10px;
+  padding:0;
   font-size: 12px;
-  width: 80%;
+  width: 300px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px gray;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 /* paramétrage bouton animé du menu
