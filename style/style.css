@@ -534,20 +534,22 @@ img {
   position: relative;
   opacity: 0;
   display: flex;
-  justify-content:start;
+  justify-content:end;
   align-items: center;
   background-color: #99e2d0;
   border-top-right-radius:10px;
   border-bottom-right-radius: 10px;
 
 }
+    /* bouton check position et format */
   .compo_menu_check_icon :before {
     
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
-    padding: 0.3rem;
+    padding: 0px;
     color: #99e2d0;
+    opacity: 1;
   }
 
 
@@ -606,16 +608,12 @@ img {
   font-family: roboto;
   background-color: white;
     display: flex;
-  justify-content: space-between;
+  justify-content:flex-end;
   font-size: 12px;
-  width: 70%;
+  width: 80%;
   border-radius: 10px;
-  padding: 0.8rem;
-  margin: 1rem;
-  margin-left: 50px;
   box-shadow: 5px 5px 5px gray;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 /* paramétrage bouton animé du menu
@@ -668,7 +666,6 @@ img {
   font-weight: 900;
   display: flex;
   align-items: flex-end;
-  margin-left: auto;
   padding-right: 20px;
 
 
@@ -691,6 +688,4 @@ img {
 
 }
 
-.anima {
-  visibility: visible;
-}
+
