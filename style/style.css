@@ -34,10 +34,11 @@
 /* Loading Spinner */
 .demo {
     width: 200px;
-    margin: 0 auto;
+    margin: auto;
     position: relative;
     text-align: justify;
-}
+    top:30px;
+}   
 .custom-loading-spinner {
     cursor: progress;
     position: absolute;
@@ -160,7 +161,7 @@ h3 {
 
 i {
   color: grey;
-  width: 100%;
+  width: auto;
   padding-left: 15px;
   padding-right: 25px;
   width: 0;
@@ -289,6 +290,7 @@ a:link {
 
 }
 
+
 .restaurant {
 
   margin-top: 20px;
@@ -328,22 +330,9 @@ a:link {
 
 
 
-/* Restaurant no wrap  (...)*/
-.entree1 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 200px;
 
-}
 
-.entree2 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 200px;
 
-}
 
 .restaurant1 {
 
@@ -424,13 +413,18 @@ img {
   right:50px;
 }
 
+/* Coeur sur les 4 restos */
 .favori2 {
   display: flex;
-  align-content: normal;
   align-items: flex-end;
-  justify-content: flex-end;
+  font-size: 25px;
+  position: relative;
+  left:270px;
+  bottom:25px;
 
-
+ 
+  
+  
 }
 
 
@@ -475,9 +469,10 @@ img {
 
 .restaurant_menu:hover .compo_menu_check_icon {
   cursor: pointer;
-  transform: translateX(-75%);
+  margin-right: 60px;
+  transform: translateX(20%);
   transition: ease-in-out 300ms;
-  margin-left: auto;
+  margin-left: -5rem;
   opacity: 1;
 }
 .restaurant_menu:hover .compo_menu_check_icon i {
@@ -517,16 +512,17 @@ img {
  
   
 .compo_menu_check_icon {
-  box-sizing: border-box;
-  padding: 0 ;
   position: relative;
   opacity: 0;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  border-top-right-radius:10px;
+  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  width: 65px;
+  height: 4rem;
+  margin: -10px -10px -10px 0px;
   
 
 }
@@ -534,9 +530,9 @@ img {
   .compo_menu_check_icon :before {
     
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: white;
-    padding: 0px;
+    padding: 0.3rem;
     color: #99e2d0;
   }
 
@@ -556,28 +552,28 @@ img {
 
 /* format menu */
 .restaurant_menu {
-  font-family: roboto;
-  background-color: white;
   display: flex;
   justify-content:space-between;
-  margin:10px;
-  padding:0;
+
+  font-family: roboto;
+  box-sizing: border-box;
+  background-color: white;
+  margin:1rem;
+  padding:0.8rem;
   font-size: 12px;
-  width: 300px;
+  width: auto;
+  height:4rem;
   border-radius: 10px;
   box-shadow: 5px 5px 5px gray;
   white-space: nowrap;
   overflow: hidden;
+
+
 }
 
-/* paramétrage bouton animé du menu
-.cercle .fa-check-circle {
-  display: flex;
-  color: var(lightgreen);
-  justify-content: center;
-  align-items: center;
-}
- */
+
+
+
 
 /* Nom du restaurant et changement de police */
 
@@ -589,39 +585,51 @@ img {
 
 }
 
-/* txt overflow entree1 et 2 */
-.restaurant_menu
 /* format et disposition entree1 */
+
+
+
 
 .entree1 {
   display: block;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width:90%;
   margin-left: 20px;
   font-size: 20px;
   font-weight: 900;
 
 }
-
-
-
-
-/*  format et disposition entree2 */
 .entree2 {
-  display: block;
-  margin-left: 20px;
-  font-size: 15px;
-
+word-wrap: normal;
+display: block;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+width:90%;
+margin-left: 20px;
+font-size: 15px;
 
 }
 
+
+.compo_menu_check {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  right:-5.5rem;
+}
 /*  format et disposition prix*/
 .prix {
 
-
-  font-weight: 900;
   display: flex;
   align-items: flex-end;
-  padding-right: 20px;
+    font-weight: bold;
+  margin-right: 2rem;
 
+  
 
 }
 
