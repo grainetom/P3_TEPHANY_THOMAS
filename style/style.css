@@ -449,8 +449,7 @@ img {
 
 /* Animation Menus  */
 
-.restaurant_menu:hover .compo_menu_check_icon {
-  cursor: pointer;
+.restaurant_menu:hover .compo_menu_check_icon {  
   transform: translateX(-75%);
   transition: ease-in-out 600ms;
   opacity: 1;
@@ -502,6 +501,7 @@ img {
   border-bottom-right-radius: 20px;
   width: 7rem;
   height: 7.2rem;
+  right:-105px;
   margin: -10px -10px -10px 0px;
 
 }
@@ -537,14 +537,16 @@ img {
   display: flex;
   justify-content:space-between;
   margin:auto;
-  padding:auto;
+  padding:0.2rem;
   font-family: roboto;
   border-radius: 20px;
-  width: auto;
+  width: 100%;
   height:4rem;
   box-shadow: 5px 5px 5px gray;
   white-space: nowrap;
   overflow: hidden;
+  position:relative;
+  right: 5.5rem;
 
 
 }
@@ -597,7 +599,6 @@ font-size: 15px;
   position: relative;
   display: flex;
   align-items: flex-end;
-  right:-5.5rem;
 }
 /*  format et disposition prix*/
 .prix {
