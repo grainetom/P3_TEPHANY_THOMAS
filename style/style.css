@@ -502,8 +502,7 @@ img {
   width: 7rem;
   height: 7.2rem;
   right:-105px;
-  margin: -10px -10px -10px 0px;
-
+  
 }
     /* bouton check position et format */
   .compo_menu_check_icon :before {
@@ -512,6 +511,8 @@ img {
     border-radius: 25px;
     background-color: white;
     color: #99e2d0;
+    padding-right: 15x;
+    padding-bottom: -15px;
     padding: 0.3rem;
     
    }
@@ -536,23 +537,33 @@ img {
   background-color: white;
   display: flex;
   justify-content:space-between;
-  margin:auto;
-  padding:0.2rem;
+  align-items: center;
   font-family: roboto;
   border-radius: 20px;
   width: 100%;
-  height:4rem;
+  
+  height: 80px;
+  margin-bottom: 10px ;
+
   box-shadow: 5px 5px 5px gray;
   white-space: nowrap;
   overflow: hidden;
-  position:relative;
-  right: 5.5rem;
+ 
 
 
 }
 
 
+/*  format et disposition prix*/
+.prix {
 
+  display:flex;
+  font-weight: bold;
+  margin-right: auto;
+  position: absolute;
+  left: 50rem;
+  margin-left: 0;
+}
 
 
 /* Nom du restaurant et changement de police */
@@ -600,19 +611,9 @@ font-size: 15px;
   display: flex;
   align-items: flex-end;
 }
-/*  format et disposition prix*/
-.prix {
-
-  display:flex;
-  font-weight: bold;
-  margin-right: auto;
-  position: absolute;
-  left: 350px;
-  
 
   
 
-}
 
 /* Bouton mauve commande */
 .commander {
