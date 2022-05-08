@@ -14,8 +14,6 @@
 
 
 
-
-
 /* Version mobile */
 
 @media screen and (max-width: 600px) {
@@ -133,7 +131,7 @@ p {
   color: grey;
 }
 
-/* Bouton mauve explorer nos resaurants */
+/* Bouton mauve explorer nos restaurants */
 .explorer {
   display: block;
   margin: auto;
@@ -216,19 +214,6 @@ a:link {
 }
 
 /* Fonctionnement mise en page flex */
-.fonctionnementext {
-  font-family: roboto;
-
-  font-size: 22px;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-right: 0px;
-  padding-top: 40px;
-  padding-right: 30px;
-  padding-left: 20px;
-  padding-bottom: 5px;
-}
-
 
 
 /* Boutons fonctionnement */
@@ -323,8 +308,6 @@ a:link {
   right: 50px;
 
 
-
-
 }
 
 
@@ -334,29 +317,26 @@ a:link {
 
 
 
-.restaurant1 {
-
+.restaurant1,
+.restaurant2,
+.restaurant3,
+.restaurant4
+ {
 
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
   padding-bottom: 10px;
-
   border-radius: 15px;
   box-shadow: 5px 5px 5px gray
 }
 
 
-
+/* 
 .restaurant2 {
 
 
-  margin-top: 20px;
-  background-color: white;
-  font-size: 22px;
-  padding-bottom: 10px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px gray
+  
 }
 
 .restaurant3 {
@@ -384,6 +364,7 @@ a:link {
   box-shadow: 5px 5px 5px gray
 }
 
+ */
 
 
 img {
@@ -428,6 +409,7 @@ img {
 }
 
 
+
 /* Effet couleur coeur (forum OC) */
 .fa-heart {
   color: black;
@@ -469,10 +451,8 @@ img {
 
 .restaurant_menu:hover .compo_menu_check_icon {
   cursor: pointer;
-  margin-right: 60px;
-  transform: translateX(20%);
-  transition: ease-in-out 300ms;
-  margin-left: -5rem;
+  transform: translateX(-75%);
+  transition: ease-in-out 600ms;
   opacity: 1;
 }
 .restaurant_menu:hover .compo_menu_check_icon i {
@@ -518,12 +498,11 @@ img {
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 65px;
-  height: 4rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 7rem;
+  height: 7.2rem;
   margin: -10px -10px -10px 0px;
-  
 
 }
     /* bouton check position et format */
@@ -532,9 +511,10 @@ img {
     border: 1px solid white;
     border-radius: 25px;
     background-color: white;
-    padding: 0.3rem;
     color: #99e2d0;
-  }
+    padding: 0.3rem;
+    
+   }
 
 
 
@@ -552,18 +532,16 @@ img {
 
 /* format menu */
 .restaurant_menu {
+
+  background-color: white;
   display: flex;
   justify-content:space-between;
-
+  margin:auto;
+  padding:auto;
   font-family: roboto;
-  box-sizing: border-box;
-  background-color: white;
-  margin:1rem;
-  padding:0.8rem;
-  font-size: 12px;
+  border-radius: 20px;
   width: auto;
   height:4rem;
-  border-radius: 10px;
   box-shadow: 5px 5px 5px gray;
   white-space: nowrap;
   overflow: hidden;
@@ -624,10 +602,12 @@ font-size: 15px;
 /*  format et disposition prix*/
 .prix {
 
-  display: flex;
-  align-items: flex-end;
-    font-weight: bold;
-  margin-right: 2rem;
+  display:flex;
+  font-weight: bold;
+  margin-right: auto;
+  position: absolute;
+  left: 350px;
+  
 
   
 
