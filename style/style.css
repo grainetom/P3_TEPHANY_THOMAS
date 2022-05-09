@@ -454,9 +454,17 @@ img {
   transition: ease-in-out 600ms;
   opacity: 1;
 }
+
+
 .restaurant_menu:hover .compo_menu_check_icon i {
   transform: rotate(360deg) translateX(-5%);
   transition: ease-out 600ms;
+}
+.restaurant_menu:hover .prix{
+
+transform: translateX(-75%);
+transition: ease-in-out 600ms;
+opacity: 1;
 }
 .menu:nth-child(1) {
   animation: apparition 2s backwards;
