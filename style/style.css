@@ -400,8 +400,9 @@ img {
   align-items: flex-end;
   font-size: 25px;
   position: relative;
-  left:270px;
-  bottom:25px;
+  left:400px;
+  bottom:20px;
+  
 
  
   
@@ -443,6 +444,7 @@ img {
 
   border-bottom: 3px solid lightgreen;
   width: 45px;
+  min-width: 0;
 
 
 }
@@ -451,21 +453,21 @@ img {
 
 .restaurant_menu:hover .compo_menu_check_icon {  
   transform: translateX(-75%);
-  transition: ease-in-out 600ms;
+  transition: ease-in-out 400ms;
   opacity: 1;
 }
 
 
 .restaurant_menu:hover .compo_menu_check_icon i {
   transform: rotate(360deg) translateX(-5%);
-  transition: ease-out 600ms;
+  transition: ease-out 400ms;
 }
 .restaurant_menu:hover .prix{
 
-transform: translateX(-75%);
-transition: ease-in-out 600ms;
-opacity: 1;
-}
+  transform: translateX(-75%);
+  transition: ease-in-out 400ms;
+  opacity: 1;}
+  
 .menu:nth-child(1) {
   animation: apparition 2s backwards;
 }
@@ -510,6 +512,8 @@ opacity: 1;
   width: 7rem;
   height: 7.2rem;
   right:-105px;
+  padding-right: 0.5rem;
+  padding-left: 0.1rem;
   
 }
     /* bouton check position et format */
@@ -519,7 +523,8 @@ opacity: 1;
     border-radius: 25px;
     background-color: white;
     color: #99e2d0;
-    padding-right: 15x;
+    padding-right: 15px;
+    padding-left: -15px;
     padding-bottom: -15px;
     padding: 0.3rem;
     
@@ -566,7 +571,6 @@ opacity: 1;
 /*  format et disposition prix*/
  .prix {
   display: flex;
-  flex-direction: column;
   align-items:flex-end;
    position:absolute;
    right:100px;
@@ -580,7 +584,7 @@ opacity: 1;
   font-family: 'Shrikhand';
   color: black;
   font-size: 27px;
-
+  margin-top: 200px;
 }
 
 /* format et disposition entree1 */
@@ -589,26 +593,28 @@ opacity: 1;
 
 
 .entree1 {
-  display: flex;
+  display: block;
   word-wrap: normal;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width:100%;
-  margin-left: 20px;
-  font-size: 20px;
+  position: relative;
+  max-width: calc(80%);
+ font-size: 20px;
   font-weight: 900;
+  padding-left: 20px;
 
 }
 .entree2 {
+display: block;
 word-wrap: normal;
-display: flex;
 text-overflow: ellipsis;
 white-space: nowrap;
 overflow: hidden;
-width:100%;
-margin-left: 20px;
+position:relative;
+max-width: calc(80%);
 font-size: 15px;
+padding-left: 20px;
 
 }
 
