@@ -400,7 +400,7 @@ img {
   align-items: flex-end;
   font-size: 25px;
   position: relative;
-  left:400px;
+  left:3800px;
   bottom:20px;
   
 
@@ -445,6 +445,31 @@ img {
   border-bottom: 3px solid lightgreen;
   width: 45px;
   min-width: 0;
+
+
+}
+.restaurant_menu {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* format menu */
+.restaurant_menu {
+
+  background-color: white;
+  display: flex;
+  justify-content:space-between;
+  margin:10px;
+  align-items: center;
+  font-family: roboto;
+  border-radius: 20px;
+  width: calc(100%) ;
+  height: 80px;
+  padding-bottom: 5px;
+  margin-bottom: 5px ;
+  box-shadow: 5px 5px 5px gray;
+ 
+
 
 
 }
@@ -512,8 +537,8 @@ img {
   width: 7rem;
   height: 7.2rem;
   right:-105px;
-  padding-right: 0.5rem;
-  padding-left: 0.1rem;
+  padding-right: 5px;
+  padding-left: 1px;
   
 }
     /* bouton check position et format */
@@ -544,47 +569,26 @@ img {
 
 }
 
-/* format menu */
-.restaurant_menu {
-
-  background-color: white;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  font-family: roboto;
-  border-radius: 20px;
-  width: 100%;
-  
-  height: 80px;
-  padding-bottom: 5px;
-  margin-bottom: 5px ;
-
-  box-shadow: 5px 5px 5px gray;
-  white-space: nowrap;
-  overflow: hidden;
- 
-
-
-}
 
 
 /*  format et disposition prix*/
  .prix {
-  display: flex;
-  align-items:flex-end;
-   position:absolute;
-   right:100px;
-  font-weight: bold;
+ display:inline;
+text-align: right; 
+margin-left: auto;
+margin-bottom:-23px;
 
  }
 
 /* Nom du restaurant et changement de police */
 
 .resopal {
+  padding: border-box;
   font-family: 'Shrikhand';
   color: black;
   font-size: 27px;
-  margin-top: 200px;
+  margin-top: 300px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 /* format et disposition entree1 */
@@ -593,28 +597,26 @@ img {
 
 
 .entree1 {
-  display: block;
-  word-wrap: normal;
+  display: flex;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  margin-left:5px;  
+  padding-top: 1px;
+  font-weight: bold;
   position: relative;
-  max-width: calc(80%);
- font-size: 20px;
-  font-weight: 900;
-  padding-left: 20px;
+  font-size: 18px;
+ white-space: nowrap;
+  overflow: hidden;
 
 }
 .entree2 {
-display: block;
-word-wrap: normal;
-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+display: flex;
+margin-left:5px;  
+
+padding-bottom: 2px;
 white-space: nowrap;
-overflow: hidden;
 position:relative;
-max-width: calc(80%);
-font-size: 15px;
-padding-left: 20px;
+
 
 }
 
