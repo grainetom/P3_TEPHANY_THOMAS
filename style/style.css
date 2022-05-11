@@ -449,9 +449,7 @@ img {
 
 }
 .restaurant_menu {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+ 
 }
 /* format menu */
 .restaurant_menu {
@@ -463,12 +461,15 @@ img {
   align-items: center;
   font-family: roboto;
   border-radius: 20px;
-  width: calc(100%) ;
+  width: calc(80%) ;
   height: 80px;
   padding-bottom: 5px;
   margin-bottom: 5px ;
   box-shadow: 5px 5px 5px gray;
- 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width:100%;
 
 
 
@@ -573,10 +574,11 @@ img {
 
 /*  format et disposition prix*/
  .prix {
- display:inline;
+ display:inline-block;
 text-align: right; 
 margin-left: auto;
-margin-bottom:-23px;
+margin-bottom:-21px;
+
 
  }
 
@@ -597,22 +599,25 @@ margin-bottom:-23px;
 
 
 .entree1 {
-  display: flex;
-  text-overflow: ellipsis;
+ 
+  text-overflow: ellipsis; 
+
+ 
+
   margin-left:5px;  
   padding-top: 1px;
   font-weight: bold;
   position: relative;
   font-size: 18px;
  white-space: nowrap;
-  overflow: hidden;
 
 }
 .entree2 {
+
   text-overflow: ellipsis;
 display: flex;
 margin-left:5px;  
-
+width: calc(100%);
 padding-bottom: 2px;
 white-space: nowrap;
 position:relative;
