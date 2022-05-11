@@ -461,7 +461,6 @@ img {
   align-items: center;
   font-family: roboto;
   border-radius: 20px;
-  width: calc(80%) ;
   height: 80px;
   padding-bottom: 5px;
   margin-bottom: 5px ;
@@ -472,6 +471,14 @@ img {
   width:100%;
 
 
+
+}
+
+.restaurant_menu:hover .entree1 .entree2{
+  text-overflow: ellipsis; 
+  display: flex; 
+  overflow: hidden; 
+  white-space: nowrap;
 
 }
 
@@ -599,28 +606,27 @@ margin-bottom:-21px;
 
 
 .entree1 {
- 
+  display: block;
   text-overflow: ellipsis; 
-
- 
-
-  margin-left:5px;  
-  padding-top: 1px;
-  font-weight: bold;
-  position: relative;
+  overflow: hidden; 
+  white-space: nowrap;
+  width: 200px; 
+  height: 32px;
   font-size: 18px;
- white-space: nowrap;
-
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  
 }
 .entree2 {
-
-  text-overflow: ellipsis;
-display: flex;
-margin-left:5px;  
-width: calc(100%);
-padding-bottom: 2px;
-white-space: nowrap;
-position:relative;
+    display: block;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap;
+    width: 200px; 
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 
 }
