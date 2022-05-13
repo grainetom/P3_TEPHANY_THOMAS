@@ -23,27 +23,30 @@
     background-color: #f6f6f6;
 
   }
+
   .restaurant {
     display: flex;
     flex-direction: column;
   }
-  
-  
-/* Loading Spinner */
-.demo {
+
+
+  /* Loading Spinner */
+  .demo {
     width: 200px;
     margin: auto;
     position: relative;
     text-align: justify;
-    top:30px;
-}   
-.custom-loading-spinner {
+    top: 30px;
+  }
+
+  .custom-loading-spinner {
     cursor: progress;
     position: absolute;
     width: 100%;
     height: 100%;
-}
-.custom-loading-spinner::before {
+  }
+
+  .custom-loading-spinner::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -52,8 +55,9 @@
     overflow: hidden;
     background: #0b0b0b;
     opacity: 0.7;
-}
-.custom-loading-spinner::after {
+  }
+
+  .custom-loading-spinner::after {
     box-sizing: border-box;
     z-index: 10002;
     content: "";
@@ -68,13 +72,18 @@
     height: 50px;
     animation: custom-loading 1s linear 5;
     animation-fill-mode: forwards;
-}
+  }
 
-@keyframes custom-loading {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg);
-    visibility: hidden}
-}
+  @keyframes custom-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+      visibility: hidden
+    }
+  }
 
 
 }
@@ -292,7 +301,7 @@ a:link {
 
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
-.nouveau{
+.nouveau {
   align-content: flex-end;
   display: inline-block;
   border: 1px solid #99e299;
@@ -320,8 +329,7 @@ a:link {
 .restaurant1,
 .restaurant2,
 .restaurant3,
-.restaurant4
- {
+.restaurant4 {
 
   margin-top: 20px;
   background-color: white;
@@ -391,7 +399,7 @@ img {
 
   align-content: flex-end;
   position: absolute;
-  right:50px;
+  right: 50px;
 }
 
 /* Coeur sur les 4 restos */
@@ -400,13 +408,13 @@ img {
   align-items: flex-end;
   font-size: 25px;
   position: relative;
-  left:380px;
-  bottom:20px;
-  
+  left: 380px;
+  bottom: 20px;
 
- 
-  
-  
+
+
+
+
 }
 
 
@@ -448,43 +456,32 @@ img {
 
 
 }
-.restaurant_menu {
- 
-}
+
+
+
 /* format menu */
 .restaurant_menu {
 
   background-color: white;
   display: flex;
-  justify-content:space-between;
-  margin:10px;
+  justify-content: space-between;
+  margin-right: 20px;
   align-items: center;
   font-family: roboto;
   border-radius: 20px;
   height: 80px;
   padding-bottom: 5px;
-  margin-bottom: 5px ;
+  margin-bottom: 5px;
   box-shadow: 5px 5px 5px gray;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-  width:100%;
-
-
+  width: 100%;
 
 }
 
-.restaurant_menu:hover .entree1 .entree2{
-  text-overflow: ellipsis; 
-  display: flex; 
-  overflow: hidden; 
-  white-space: nowrap;
-
-}
 
 /* Animation Menus  */
 
-.restaurant_menu:hover .compo_menu_check_icon {  
+.restaurant_menu:hover .compo_menu_check_icon {
   transform: translateX(-75%);
   transition: ease-in-out 400ms;
   opacity: 1;
@@ -495,12 +492,14 @@ img {
   transform: rotate(360deg) translateX(-5%);
   transition: ease-out 400ms;
 }
-.restaurant_menu:hover .prix{
+
+.restaurant_menu:hover .prix {
 
   transform: translateX(-75%);
   transition: ease-in-out 400ms;
-  opacity: 1;}
-  
+  opacity: 1;
+}
+
 .menu:nth-child(1) {
   animation: apparition 2s backwards;
 }
@@ -526,13 +525,14 @@ img {
     opacity: 0;
     transform: translateY(15%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
- 
-  
+
+
 .compo_menu_check_icon {
   position: relative;
   opacity: 0;
@@ -544,24 +544,25 @@ img {
   border-bottom-right-radius: 20px;
   width: 7rem;
   height: 7.2rem;
-  right:-105px;
+  right: -105px;
   padding-right: 5px;
   padding-left: 1px;
-  
+
 }
-    /* bouton check position et format */
-  .compo_menu_check_icon :before {
-    
-    border: 1px solid white;
-    border-radius: 25px;
-    background-color: white;
-    color: #99e2d0;
-    padding-right: 15px;
-    padding-left: -15px;
-    padding-bottom: -15px;
-    padding: 0.3rem;
-    
-   }
+
+/* bouton check position et format */
+.compo_menu_check_icon :before {
+
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: white;
+  color: #99e2d0;
+  padding-right: 15px;
+  padding-left: -15px;
+  padding-bottom: -15px;
+  padding: 0.3rem;
+
+}
 
 
 
@@ -580,14 +581,14 @@ img {
 
 
 /*  format et disposition prix*/
- .prix {
- display:inline-block;
-text-align: right; 
-margin-left: auto;
-margin-bottom:-21px;
+.prix {
+  display: flex;
+  text-align: right;
+  margin-left: auto;
+  margin-bottom: -21px;
 
 
- }
+}
 
 /* Nom du restaurant et changement de police */
 
@@ -607,26 +608,30 @@ margin-bottom:-21px;
 
 .entree1 {
   display: block;
-  text-overflow: ellipsis; 
-  overflow: hidden; 
-  white-space: nowrap;
-  width: 200px; 
-  height: 32px;
+  width: 220px;
+  position: relative;
   font-size: 18px;
   font-weight: bold;
   padding-left: 10px;
-  padding-right: 10px;
-  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+
+
+
+
 }
+
 .entree2 {
-    display: block;
-    text-overflow: ellipsis; 
-    overflow: hidden; 
-    white-space: nowrap;
-    width: 200px; 
-    height: 32px;
-    padding-left: 10px;
-    padding-right: 10px;
+  display: block;
+  width: 220px;
+  position: relative;
+  padding-left: 10px;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 
 
 }
@@ -638,7 +643,7 @@ margin-bottom:-21px;
   align-items: flex-end;
 }
 
-  
+
 
 
 /* Bouton mauve commande */
@@ -657,6 +662,7 @@ margin-bottom:-21px;
   box-shadow: 5px 5px 5px #c2c2c2;
 
 }
+
 /* couleur fond d'ecran et texte footer */
 .footeromf {
 
@@ -695,4 +701,3 @@ margin-bottom:-21px;
   padding-left: 70px;
   line-height: 2;
 }
-
