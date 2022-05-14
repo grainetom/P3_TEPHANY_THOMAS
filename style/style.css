@@ -585,6 +585,7 @@ img {
 font-weight: bold;  
   margin-left: auto;
   margin-bottom: -21px;
+  text-overflow: ellipsis;
 
 
 }
@@ -608,7 +609,6 @@ text-overflow: ellipsis ellipsis;
 }
 
 .entree1 {
-  text-overflow: ellipsis ;
   margin-left: 0.5rem;
   display: block;
   font-size: 18px;
@@ -616,6 +616,7 @@ text-overflow: ellipsis ellipsis;
   padding-left: 10px;
   white-space: nowrap;
   overflow:hidden;
+  text-overflow: ellipsis;
   
  
 
@@ -625,13 +626,14 @@ text-overflow: ellipsis ellipsis;
 }
 
 .entree2 {
-  text-overflow: ellipsis;
   margin-left: 0.5rem;
   padding-bottom: 0.2rem;
   padding-left: 10px;
 
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+
    
 }
 
