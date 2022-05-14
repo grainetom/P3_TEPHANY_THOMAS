@@ -482,20 +482,20 @@ img {
 /* Animation Menus  */
 
 .restaurant_menu:hover .compo_menu_check_icon {
-  transform: translateX(-75%);
+  transform: translateX(-65%);
   transition: ease-in-out 400ms;
   opacity: 1;
 }
 
 
 .restaurant_menu:hover .compo_menu_check_icon i {
-  transform: rotate(360deg) translateX(-5%);
+  transform: rotate(360deg) translateX(-65%);
   transition: ease-out 400ms;
 }
 
 .restaurant_menu:hover .prix {
 
-  transform: translateX(-75%);
+  transform: translateX(-25%);
   transition: ease-in-out 400ms;
   opacity: 1;
 }
@@ -582,8 +582,7 @@ img {
 
 /*  format et disposition prix*/
 .prix {
-  display: flex;
-  text-align: right;
+font-weight: bold;  
   margin-left: auto;
   margin-bottom: -21px;
 
@@ -602,20 +601,22 @@ img {
 }
 
 /* format et disposition entree1 */
-
-
-
+.entrees{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
 
 .entree1 {
+  text-overflow: ellipsis ;
+  margin-left: 0.5rem;
   display: block;
-  width: 220px;
-  position: relative;
   font-size: 18px;
   font-weight: bold;
   padding-left: 10px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow:hidden;
+  
  
 
 
@@ -624,16 +625,14 @@ img {
 }
 
 .entree2 {
-  display: block;
-  width: 220px;
-  position: relative;
-  padding-left: 10px;
-   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding-left: 10px;
 
-
-
+  white-space: nowrap;
+  overflow: hidden;
+   
 }
 
 
