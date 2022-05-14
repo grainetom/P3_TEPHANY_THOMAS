@@ -593,9 +593,11 @@ font-weight: bold;
 /* Nom du restaurant et changement de police */
 
 .resopal {
+  width:100%;
   padding: border-box;
   font-family: 'Shrikhand';
   color: black;
+  padding-top: 100px;
   font-size: 27px;
   margin-top: 300px;
   border-radius: 10px 10px 10px 10px;
@@ -603,6 +605,7 @@ font-weight: bold;
 
 /* format et disposition entree1 */
 .entrees{
+padding-right: 20px;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis ellipsis;
@@ -616,7 +619,7 @@ text-overflow: ellipsis ellipsis;
   padding-left: 10px;
   white-space: nowrap;
   overflow:hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis ;
   
  
 
@@ -632,7 +635,7 @@ text-overflow: ellipsis ellipsis;
 
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis ;
 
    
 }
