@@ -11,9 +11,11 @@
 }
 
 
-
-
-
+@media (min-width: 768px) and (max-width: 991px) {
+.restaurant {
+    width: 40%;
+  }
+}
 /* Version mobile */
 
 @media screen and (max-width: 600px) {
@@ -28,6 +30,7 @@
     display: flex;
     flex-direction: column;
   }
+
 
 
   /* Loading Spinner */
@@ -81,7 +84,7 @@
 
     100% {
       transform: rotate(360deg);
-      visibility: hidden
+      visibility: hidden;
     }
   }
 
@@ -302,6 +305,7 @@ a:link {
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
 .nouveau {
+  font-family: 'roboto';
   align-content: flex-end;
   display: inline-block;
   border: 1px solid #99e299;
@@ -482,20 +486,20 @@ img {
 /* Animation Menus  */
 
 .restaurant_menu:hover .compo_menu_check_icon {
-  transform: translateX(-45%);
+  transform: translateX(-55%);
   transition: ease-in-out 400ms;
   opacity: 1;
 }
 
 
 .restaurant_menu:hover .compo_menu_check_icon i {
-  transform: rotate(360deg) translateX(-65%);
-  transition: ease-out 400ms;
+  transform: rotate(360deg) translateX(-55%);
+  transition: ease-in-out 400ms;
 }
 
 .restaurant_menu:hover .prix {
 
-  transform: translateX(-25%);
+  transform: translateX(-240%);
   transition: ease-in-out 400ms;
   opacity: 1;
 }
@@ -582,11 +586,13 @@ img {
 
 /*  format et disposition prix*/
 .prix {
-font-weight: bold;  
+  font-weight: bold;  
   margin-left: auto;
+  text-align: end;
+  position:relative;
+  right:-100px;
   margin-bottom: -21px;
-  text-overflow: ellipsis;
-
+ 
 
 }
 
