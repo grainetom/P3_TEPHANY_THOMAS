@@ -499,7 +499,7 @@ img {
 
 .restaurant_menu:hover .prix {
 
-  transform: translateX(-240%);
+  transform: translateX(-300%);
   transition: ease-in-out 400ms;
   opacity: 1;
 }
