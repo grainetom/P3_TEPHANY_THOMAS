@@ -588,9 +588,8 @@ img {
 .prix {
   font-weight: bold;  
   margin-left: auto;
-  text-align: end;
-  position:relative;
-  right:-100px;
+  position: absolute;
+  left:390px;
   margin-bottom: -21px;
  
 
