@@ -1,9 +1,7 @@
  /*  Annule tous les margin et padding mis par défaut par les navigateurs */
-*{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}
+
+      
+
 @font-face {
 
   font-family: 'roboto';
