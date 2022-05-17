@@ -299,6 +299,8 @@ margin-left: 200px;
 .photo_resto {
 
   object-fit: fill;
+  width: 100%;
+  height: 100%;
   border-radius: 15px 15px 0 0;
   object-position: center bottom;
 
@@ -306,7 +308,9 @@ margin-left: 200px;
 @media (min-width: 992px) 
 {
   .photo_resto {
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
     object-position: center bottom;
   }
 }
@@ -352,13 +356,13 @@ margin-left: 200px;
     font-family: 'roboto';
 
     display: inline-block;
+    align-items: left;
     border: 1px solid #99e299;
     background-color: #99e2d0;
     color: #0a8d6d;
     border-radius: 2px;
     padding: 1px 10px;
     margin: 300px;
-    z-index: auto;
     font-weight: 600;
     position: absolute;
     right: 500px;
@@ -391,9 +395,8 @@ margin-left: 200px;
     display: inline-block;
 
 
-margin: 1.5rem 0;
-  width:400px;
-margin-left: 30px;
+  width:20%;
+margin-left: 80px;
 height: 70%;
 
 }
@@ -434,15 +437,16 @@ height: 70%;
 
 
 img {
-  max-width: 100%;
+  max-width: 110%;
 
 
 }
 /* img version desktop */
 @media (min-width: 992px) 
 { .img{
-  max-width: 25%;
-  object-fit: fill;
+  max-width: auto;
+  max-height: auto;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
   object-position: center bottom;
 }
@@ -453,9 +457,8 @@ img {
 @media (min-width: 992px) 
 { .nom_resto
   {
-  width: 100%;
-  margin-right: -100px;
-  align-items:flex-start;
+  display: flex;
+  align-items:left;
 
   }
 }
@@ -478,7 +481,6 @@ img {
   {
   width: 100%;
   align-items:center;
-  margin-left: 150px;
   height:80%;
 
 }
@@ -515,9 +517,8 @@ img {
     flex-direction: column;
     justify-content: space-around;
   
-    align-content: ;
     position: relative;
-    right: -450px;
+    right: -180px;
 
   }
 }
