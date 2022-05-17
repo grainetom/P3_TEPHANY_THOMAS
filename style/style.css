@@ -303,9 +303,13 @@ margin-left: 200px;
   object-position: center bottom;
 
 }
-
-/*  Photos restaurants pour desktop */
-
+@media (min-width: 992px) 
+{
+  .photo_resto {
+    object-fit: cover;
+    object-position: center bottom;
+  }
+}
 .restaurant {
 
   margin-top: 20px;
@@ -342,8 +346,25 @@ margin-left: 200px;
 
 }
 
+@media (min-width: 992px) 
+{
+  .nouveau {
+    font-family: 'roboto';
 
-
+    display: inline-block;
+    border: 1px solid #99e299;
+    background-color: #99e2d0;
+    color: #0a8d6d;
+    border-radius: 2px;
+    padding: 1px 10px;
+    margin: 300px;
+    z-index: auto;
+    font-weight: 600;
+    position: absolute;
+    right: 500px;
+    visibility: hidden;
+  }
+}
 
 
 
@@ -362,7 +383,21 @@ margin-left: 200px;
   box-shadow: 5px 5px 5px gray
 }
 
+/* Restaurant position pour Desktop */
+@media (min-width: 992px) 
+{
+  .restaurant1,.restaurant2,.restaurant3,.restaurant4 {
 
+    display: inline-block;
+
+
+margin: 1.5rem 0;
+  width:400px;
+margin-left: 30px;
+height: 70%;
+
+}
+}
 /* 
 .restaurant2 {
 
@@ -403,6 +438,28 @@ img {
 
 
 }
+/* img version desktop */
+@media (min-width: 992px) 
+{ .img{
+  max-width: 25%;
+  object-fit: fill;
+  border-radius: 15px 15px 0 0;
+  object-position: center bottom;
+}
+
+}
+
+/* Nom restau desktop */
+@media (min-width: 992px) 
+{ .nom_resto
+  {
+  width: 100%;
+  margin-right: -100px;
+  align-items:flex-start;
+
+  }
+}
+
 
 .metro {
   display: flex;
@@ -415,6 +472,17 @@ img {
   color: black;
 }
 
+/* Nom restau desktop */
+@media (min-width: 992px) 
+{ .metro
+  {
+  width: 100%;
+  align-items:center;
+  margin-left: 150px;
+  height:80%;
+
+}
+}
 .favori {
   display: flex;
   flex-direction: row;
@@ -438,6 +506,20 @@ img {
 
 
 
+}
+/* favori desktop */
+@media (min-width: 992px) 
+{ .favori
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    align-content: ;
+    position: relative;
+    right: -450px;
+
+  }
 }
 
 
