@@ -591,13 +591,28 @@ img {
 
 
 @media (min-width: 992px) {
+
   .entrees_desktop {
     display: inline-block;
     width: 400px;
-    
   }
 }
 
+@media (min-width: 992px) {
+  
+  .PLATS {
+    display: inline-block;
+    width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .DESSERTS{
+    display: inline-block;
+    width: 400px;
+  }
+}
 
 
   
@@ -715,7 +730,7 @@ img {
 
 
 }
-
+/* Correction position prix pour desktop */
 @media (min-width: 992px) {
   .prix {
     display: inline-block;
