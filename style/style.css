@@ -589,11 +589,13 @@ img {
 
 
 
-
 @media (min-width: 992px) {
 
   .entrees_desktop {
-    display: inline-block;
+    display: block;
+    margin:0 auto;
+    float:left;
+
     width: 400px;
   }
 }
@@ -601,16 +603,22 @@ img {
 @media (min-width: 992px) {
   
   .PLATS {
-    display: inline-block;
+    display: block;
+    float:center;
     width: 400px;
+    margin:0 auto;
   }
 }
 
 @media (min-width: 992px) {
   
   .DESSERTS{
-    display: inline-block;
+    display: block;
+    float:right;
+    position: relative;
+    top:-350px;
     width: 400px;
+
   }
 }
 
@@ -732,9 +740,9 @@ img {
 }
 /* Correction position prix pour desktop */
 @media (min-width: 992px) {
-  .prix {
+  .prix.entrees_desktop .PLATS .DESSERTS  {
     display: inline-block;
-    left:360px;
+    left:300px;
     
   }
 }
@@ -757,6 +765,7 @@ img {
   .resopal {
     width: 50%;
     font-size: 27px;
+    padding-bottom: 100px;
   }
 }
 
@@ -823,7 +832,17 @@ img {
   box-shadow: 5px 5px 5px #c2c2c2;
 
 }
+/* bouton commander pour desktop */
 
+@media (min-width: 990px) {
+  .commander {
+    position: absolute;
+    right: 50%;
+    margin-bottom: auto;
+  }
+
+
+}
 /* couleur fond d'ecran et texte footer */
 .footeromf {
 
