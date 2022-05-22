@@ -740,10 +740,11 @@ img {
 }
 /* Correction position prix pour desktop */
 @media (min-width: 992px) {
-  .prix.entrees_desktop .PLATS .DESSERTS  {
-    display: inline-block;
-    left:300px;
-    
+  .prix {
+    margin-left: auto;
+    position: relative;
+    right: -100px;
+
   }
 }
 
