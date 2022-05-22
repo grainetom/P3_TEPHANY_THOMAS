@@ -361,9 +361,9 @@ a:link {
 @media (min-width: 992px) {
   .nouveau {
     font-family: 'roboto';
-
+    
     display: inline-block;
-    align-items: left;
+    align-content: left;
     border: 1px solid #99e299;
     background-color: #99e2d0;
     color: #0a8d6d;
@@ -372,8 +372,8 @@ a:link {
     margin: 300px;
     font-weight: 600;
     position: absolute;
-    right: 500px;
-    visibility: hidden;
+    right: 1140px;
+    bottom: -110px;
   }
 }
 
