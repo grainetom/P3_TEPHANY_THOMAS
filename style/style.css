@@ -551,13 +551,9 @@ img  {
 /* favori desktop */
 @media (min-width: 992px) {
   .favori {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
+    display: inline-block;
     position: relative;
-    right: -180px;
-
+    left:180px;
   }
 }
 
@@ -898,6 +894,15 @@ img  {
   width: 25%;
 
 }
+.logo_footer2 {
+
+  filter: invert(100);
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  width: 25%;
+
+}
 @media (min-width: 920px) {
   .logo_footer {
     filter: invert(100);
@@ -919,7 +924,7 @@ img  {
   padding-bottom: 25px;
   position: relative;
   width: 10%;
-  right:600px;
+  right:60px;
 
   }
 }
