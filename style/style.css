@@ -633,7 +633,7 @@ img  {
     margin:0 auto;
     float:left;
 
-    width: 400px;
+    width: 500px;
   }
 }
 
@@ -642,7 +642,7 @@ img  {
   .PLATS {
     display: block;
     float:center;
-    width: 400px;
+    width: 500px;
     margin:0 auto;
   }
 }
@@ -654,7 +654,7 @@ img  {
     float:right;
     position: relative;
     top:-350px;
-    width: 400px;
+    width: 500px;
 
   }
 }
@@ -898,15 +898,28 @@ img  {
   width: 25%;
 
 }
-@media (min-width: 990px) {
+@media (min-width: 920px) {
   .logo_footer {
     filter: invert(100);
   padding-top: 15px;
   padding-left: 25px;
   padding-bottom: 25px;
   position: relative;
-  right : 650px;
+  right : 800px;
   width: 10%;
+
+  }
+}
+/* footer page restaurant */
+@media (min-width: 920px) {
+  .logo_footer2 {
+    filter: invert(100);
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  width: 10%;
+  right:600px;
 
   }
 }
