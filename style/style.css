@@ -339,7 +339,6 @@ a:link {
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
 .nouveau {
-  font-family: 'roboto';
   align-content: flex-end;
   display: inline-block;
   border: 1px solid #99e299;
@@ -348,16 +347,16 @@ a:link {
   border-radius: 2px;
   padding: 1px 10px;
   margin: 5px;
-  font-weight: 600;
+  z-index: auto;
+  font-weight: 700;
   z-index: 1;
   position: absolute;
-  top:645px;
-  right: 50px;
+  top: 660px;
+  right: 40px;
 
 
 }
 .nouveau2 {
-  font-family: 'roboto';
   align-content: flex-end;
   display: inline-block;
   border: 1px solid #99e299;
@@ -366,10 +365,12 @@ a:link {
   border-radius: 2px;
   padding: 1px 10px;
   margin: 5px;
-  font-weight: 600;
+  z-index: auto;
+  font-weight: 700;
   z-index: 1;
   position: absolute;
-  right: 50px;
+  top: 990px;
+  right: 40px;
 
 
 }
@@ -384,11 +385,10 @@ a:link {
     color: #0a8d6d;
     border-radius: 2px;
     padding: 1px 10px;
-    margin: 300px;
     font-weight: 600;
     position: absolute;
-    right: 1150px;
-    top: 410px;
+    right: 75%;
+    top:75% ;
   }
   .nouveau2 {
     font-family: 'roboto';
@@ -402,8 +402,8 @@ a:link {
     margin: 300px;
     font-weight: 600;
     position: absolute;
-    right: 700px;
-    bottom: -70px;
+    right: 36%;
+    bottom: -90px;
   }
 }
 
