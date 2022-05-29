@@ -185,7 +185,7 @@ i {
   padding-left: 15px;
   padding-right: 25px;
   width: 0;
-  align-items: left;
+  align-items:flex-end;
 
 }
 
@@ -347,65 +347,27 @@ a:link {
   border-radius: 2px;
   padding: 1px 10px;
   margin: 5px;
-  z-index: auto;
   font-weight: 700;
   z-index: 1;
   position: absolute;
-  top: 660px;
-  right: 40px;
+  right:55px;
 
 
 }
-.nouveau2 {
-  align-content: flex-end;
-  display: inline-block;
-  border: 1px solid #99e299;
-  background-color: #99e2d0;
-  color: #0a8d6d;
-  border-radius: 2px;
-  padding: 1px 10px;
-  margin: 5px;
-  z-index: auto;
-  font-weight: 700;
-  z-index: 1;
-  position: absolute;
-  top: 1050px;
-  right: 40px;
-
-
-}
-
 @media (min-width: 992px) {
   .nouveau {
-    font-family: 'roboto';
+  font-family: roboto;
     display: inline-block;
-    align-content: left;
-    border: 1px solid #99e299;
-    background-color: #99e2d0;
-    color: #0a8d6d;
-    border-radius: 2px;
-    padding: 1px 10px;
-    font-weight: 600;
     position: absolute;
-    right: 75%;
-    top:75% ;
-  }
-  .nouveau2 {
-    font-family: 'roboto';
-      display: inline-block;
-    align-content: left;
-    border: 1px solid #99e299;
-    background-color: #99e2d0;
-    color: #0a8d6d;
-    border-radius: 2px;
-    padding: 1px 10px;
-    margin: 300px;
-    font-weight: 600;
-    position: absolute;
-    right: 690px;
-    top: 430px;
+    right: 1420px;
+    bottom: 220px;
+
   }
 }
+
+
+
+
 
 
 
@@ -433,12 +395,11 @@ a:link {
   .restaurant4 {
 
     display: inline-block;
-
-
+    
     width: 20%;
     margin-left: 80px;
     height: 70%;
-
+   
   }
 }
 
@@ -496,7 +457,7 @@ img  {
 @media (min-width: 992px) {
   .nom_resto {
     display: flex;
-    align-items: left;
+    align-items:center;
 
   }
 }
@@ -637,7 +598,7 @@ img  {
   
   .PLATS {
     display: block;
-    float:center;
+    float:none;
     width: 500px;
     margin:0 auto;
   }
@@ -738,8 +699,8 @@ img  {
   background-color: white;
   color: #99e2d0;
   padding-right: 15px;
-  padding-left: -15px;
-  padding-bottom: -15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
   padding: 0.3rem;
 
 }
@@ -785,7 +746,6 @@ img  {
 
 .resopal {
   width: 100%;
-  padding: border-box;
   font-family: 'Shrikhand';
   color: black;
   padding-top: 100px;
@@ -924,7 +884,7 @@ img  {
   padding-bottom: 25px;
   position: relative;
   width: 10%;
-  right:60px;
+  right:600px;
 
   }
 }
