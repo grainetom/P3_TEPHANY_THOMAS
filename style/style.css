@@ -357,10 +357,10 @@ a:link {
 @media (min-width: 992px) {
   .nouveau {
   font-family: roboto;
-    display: inline-block;
+    display: flex;
     position: absolute;
-    right: 1420px;
-    bottom: 220px;
+    right: 1450px;
+    bottom: 240px;
 
   }
 }
@@ -500,7 +500,7 @@ img  {
   align-items: flex-end;
   font-size: 25px;
   position: relative;
-  left: 350px;
+  left: 300px;
   bottom: 20px;
 
 
@@ -832,7 +832,7 @@ img  {
   .commander {
     position: absolute;
     right: 50%;
-    margin-bottom: auto;
+    margin-bottom: 50px;
   }
 
 
