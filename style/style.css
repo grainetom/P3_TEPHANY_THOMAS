@@ -351,17 +351,21 @@ a:link {
   z-index: 1;
   position: absolute;
   right:55px;
-
-
 }
-@media (min-width: 992px) {
+.nouveau2 {
+ visibility: hidden;
+}
+
+@media (min-width: 920px) {
   .nouveau {
   font-family: roboto;
-    display: flex;
-    position: absolute;
-    right: 1450px;
-    bottom: 240px;
-
+  top:705px;
+  right:52%;
+  }
+  .nouveau2 {
+    font-family: roboto;
+  top:705px;
+  right:72%;
   }
 }
 
@@ -377,7 +381,6 @@ a:link {
 .restaurant2,
 .restaurant3,
 .restaurant4 {
-
   margin-top: 20px;
   background-color: white;
   font-size: 22px;
@@ -512,9 +515,9 @@ img  {
 /* favori desktop */
 @media (min-width: 992px) {
   .favori {
-    display: inline-block;
+    display: block;
     position: relative;
-    left:180px;
+    left:140px;
   }
 }
 
@@ -534,7 +537,7 @@ img  {
 }
 
 .fa-heart:hover::before {
-  color: #ff0000;
+  color:#9356DC;
   font-weight: bold;
   cursor: pointer;
 }
