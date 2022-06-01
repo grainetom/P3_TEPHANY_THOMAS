@@ -340,6 +340,27 @@ a:link {
 
 }
 
+
+
+
+
+
+
+
+
+
+.restaurant1,
+.restaurant2,
+.restaurant3,
+.restaurant4 {
+  margin-top: 20px;
+  background-color: white;
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px gray
+}
+
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
 .nouveau {
@@ -357,9 +378,24 @@ a:link {
   right:80px;
 }
 
-.nouveau2 {
-  visibility: ;
+/* Restaurant position pour Desktop */
+@media (min-width: 992px) {
+
+  .restaurant1,
+  .restaurant2,
+  .restaurant3,
+  .restaurant4 {
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+    width: 15%;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 70%;
+   
+  }
 }
+
 
 @media (min-width: 992px) {
   .nouveau {
@@ -382,43 +418,6 @@ a:link {
 
 }
 
-
-
-
-
-
-
-
-
-.restaurant1,
-.restaurant2,
-.restaurant3,
-.restaurant4 {
-  margin-top: 20px;
-  background-color: white;
-  font-size: 22px;
-  padding-bottom: 10px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px gray
-}
-
-/* Restaurant position pour Desktop */
-@media (min-width: 992px) {
-
-  .restaurant1,
-  .restaurant2,
-  .restaurant3,
-  .restaurant4 {
-
-    display: inline-block;
-    margin: 0 auto;
-    width: 15%;
-    margin-left: 80px;
-    margin-right: 80px;
-    height: 70%;
-   
-  }
-}
 
 /* 
 .restaurant2 {
