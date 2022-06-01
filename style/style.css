@@ -1,3 +1,7 @@
+* {
+ 
+  box-sizing: border-box;
+}
 @font-face {
 
   font-family: 'roboto';
@@ -339,6 +343,7 @@ a:link {
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
 .nouveau {
+
   align-content: flex-end;
   display: inline-block;
   border: 1px solid #99e299;
@@ -348,25 +353,33 @@ a:link {
   padding: 1px 10px;
   margin: 5px;
   font-weight: 700;
-  z-index: 1;
   position: absolute;
-  right:55px;
-}
-.nouveau2 {
- visibility: hidden;
+  right:80px;
 }
 
-@media (min-width: 920px) {
+.nouveau2 {
+  visibility: ;
+}
+
+@media (min-width: 992px) {
   .nouveau {
   font-family: roboto;
-  top:705px;
-  right:52%;
+  align-content: flex-end;
+  display: inline-block;
+  border: 1px solid #99e299;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  border-radius: 2px;
+  padding: 1px 10px;
+  margin: 5px;
+  z-index: auto;
+  font-weight: 700;
+  z-index: 1;
+  position: absolute;
+  top:700px;
+  right:80%;
   }
-  .nouveau2 {
-    font-family: roboto;
-  top:705px;
-  right:72%;
-  }
+
 }
 
 
@@ -398,9 +411,10 @@ a:link {
   .restaurant4 {
 
     display: inline-block;
-    
-    width: 20%;
+    margin: 0 auto;
+    width: 15%;
     margin-left: 80px;
+    margin-right: 80px;
     height: 70%;
    
   }
@@ -494,7 +508,7 @@ img  {
 
   align-content: flex-end;
   position: absolute;
-  right: 50px;
+  right: 100px;
 }
 
 /* Coeur sur les 4 restos */
@@ -515,9 +529,9 @@ img  {
 /* favori desktop */
 @media (min-width: 992px) {
   .favori {
-    display: block;
+    display: inline-block;
     position: relative;
-    left:140px;
+    left:90px;
   }
 }
 
@@ -613,7 +627,7 @@ img  {
     display: block;
     float:right;
     position: relative;
-    top:-350px;
+    top:-330px;
     width: 500px;
 
   }
@@ -866,7 +880,7 @@ img  {
   width: 25%;
 
 }
-@media (min-width: 920px) {
+@media (min-width: 992px) {
   .logo_footer {
     filter: invert(100);
   padding-top: 15px;
@@ -879,7 +893,7 @@ img  {
   }
 }
 /* footer page restaurant */
-@media (min-width: 920px) {
+@media (min-width: 992px) {
   .logo_footer2 {
     filter: invert(100);
   padding-top: 15px;
