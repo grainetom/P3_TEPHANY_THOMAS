@@ -177,6 +177,11 @@ h3 {
     text-align: center;
 
   }
+  h4 {
+    font-size: 20px;
+    font-family: 'roboto';
+    text-align: center;
+  }
 }
 
 /* Logo fonctionnemnt */
@@ -373,9 +378,22 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: absolute;
-  right:80px;
+  right:60px;
 }
+.nouveau2 {
 
+  align-content: flex-end;
+  display: inline-block;
+  border: 1px solid #99e299;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  border-radius: 2px;
+  padding: 1px 10px;
+  margin: 5px;
+  font-weight: 700;
+  position: absolute;
+  right:60px;
+}
 /* Restaurant position pour Desktop */
 @media (min-width: 992px) {
 
@@ -410,10 +428,26 @@ a:link {
   font-weight: 700;
   z-index: 1;
   position: absolute;
-  top:550px;
-  right:74%;
+  top:540px;
+  right:81%;
   }
-
+.nouveau2 {
+  font-family: roboto;
+  align-content: flex-start;
+  display: inline-block;
+  border: 1px solid #99e299;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  border-radius: 2px;
+  padding: 1px 10px;
+  margin: 5px;
+  z-index: auto;
+  font-weight: 700;
+  z-index: 1;
+  position: absolute;
+  top:540px;
+  right:1100px;
+}
 }
 
 
@@ -528,7 +562,7 @@ img  {
   .favori {
     display: inline-block;
     position: relative;
-    right:-80px;
+    left:0px;
   }
 }
 
