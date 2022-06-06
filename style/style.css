@@ -92,7 +92,7 @@
   }
 
 
-}
+
 
 
 
@@ -430,7 +430,7 @@ a:link {
   font-weight: 700;
   z-index: 1;
   position: absolute;
-  top:540px;
+  top:640px;
   right:81%;
   }
 .nouveau2 {
@@ -447,7 +447,7 @@ a:link {
   font-weight: 700;
   z-index: 1;
   position: absolute;
-  top:540px;
+  top:640px;
   right:1100px;
 }
 }
