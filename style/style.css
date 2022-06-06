@@ -562,9 +562,10 @@ img  {
 /* favori desktop */
 @media (min-width: 992px) {
   .favori {
-    display: inline-block;
+    display: flex;
+    align-items: left;
     position: relative;
-    left:100px;
+    left:90px;
   }
 }
 
