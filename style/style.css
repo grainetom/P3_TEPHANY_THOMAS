@@ -563,7 +563,7 @@ img  {
 @media (min-width: 992px) {
   .favori {
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     position: relative;
     left:90px;
   }
