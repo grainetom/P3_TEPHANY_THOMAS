@@ -28,7 +28,7 @@
     flex-direction: column;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .restaurant {
       display: flex;
       flex-direction: row;
@@ -170,7 +170,7 @@ h3 {
 }
 
 /* h3 pour Desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   h3 {
     font-size: 20px;
     font-family: 'roboto';
@@ -294,7 +294,7 @@ a:link {
   color: black;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
   .choisissez,
   .composez,
@@ -302,9 +302,9 @@ a:link {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     margin-left: 200px;
-
+    width:60%
   }
 }
 
@@ -320,7 +320,7 @@ a:link {
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .photo_resto {
     width: 100%;
     height: 100%;
@@ -396,7 +396,7 @@ a:link {
   right:60px;
 }
 /* Restaurant position pour Desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
   .restaurant1,
   .restaurant2,
@@ -405,8 +405,8 @@ a:link {
     padding: 0;
     display: inline-block;
     margin: 0 auto;
-    width: 15%;
-    margin-left: 80px;
+    width: 25%;
+    margin-left: 180px;
     margin-right: 80px;
     margin-bottom: 20px;
     height: 70%;
@@ -415,7 +415,7 @@ a:link {
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .nouveau {
   font-family: roboto;
   align-content: flex-start;
@@ -430,8 +430,8 @@ a:link {
   font-weight: 700;
   z-index: 1;
   position: absolute;
-  top:640px;
-  right:81%;
+  top:700px;
+  right:61%;
   }
 .nouveau2 {
   font-family: roboto;
@@ -447,8 +447,8 @@ a:link {
   font-weight: 700;
   z-index: 1;
   position: absolute;
-  top:640px;
-  right:1100px;
+  top:700px;
+  right:15%;
 }
 }
 
@@ -495,7 +495,7 @@ img {
 }
 
 /* img version desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 img  { 
   display: block;
   margin-left: auto;
@@ -504,7 +504,7 @@ img  {
   }
 }
 /* Nom restau desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .nom_resto {
     display: flex;
     align-items:center;
@@ -525,7 +525,7 @@ img  {
 }
 
 /* Nom restau desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .metro {
     width: 100%;
     align-items: center;
@@ -560,7 +560,7 @@ img  {
 }
 
 /* favori desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .favori {
     display: flex;
     align-items: flex-start;
@@ -634,14 +634,13 @@ img  {
 
 
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
   .entrees_desktop {
     display: block;
-    margin:0 auto;
     float:left;
 
-    width: 500px;
+    width: 100%;
   }
 }
 
@@ -650,7 +649,7 @@ img  {
   .PLATS {
     display: block;
     float:none;
-    width: 500px;
+    width: 100%;
     margin:0 auto;
   }
 }
@@ -660,9 +659,8 @@ img  {
   .DESSERTS{
     display: block;
     float:right;
-    position: relative;
     top:-330px;
-    width: 500px;
+    width: 100%;
 
   }
 }
@@ -691,6 +689,7 @@ img  {
   transition: ease-in-out 400ms;
   opacity: 1;
 }
+
 .restaurant_menu:nth-child(1) {
   animation: apparition 2s 0.2s backwards;
 }
@@ -713,20 +712,6 @@ img  {
 .restaurant_menu:nth-child(6) {
   animation: apparition 2s 0.6s backwards;
 }
-
-@keyframes apparition {
-  0% {
-    opacity: 0;
-    transform: translateY(15%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
 
 @keyframes apparition {
   0% {
@@ -801,7 +786,7 @@ img  {
 
 }
 /* Correction position prix pour desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .prix {
     margin-left: auto;
     position: relative;
@@ -823,7 +808,7 @@ img  {
 }
 
 /* resopal desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .resopal {
     width: 50%;
     font-size: 27px;
@@ -908,8 +893,8 @@ img  {
 
 @media (min-width: 990px) {
   .commander {
-    position: absolute;
-    right: 50%;
+    position: relative;
+    
     margin-bottom: 50px;
   }
 
@@ -941,20 +926,20 @@ img  {
   width: 25%;
 
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .logo_footer {
     filter: invert(100);
   padding-top: 15px;
   padding-left: 25px;
   padding-bottom: 25px;
   position: relative;
-  right : 800px;
+  right : 500px;
   width: 10%;
 
   }
 }
 /* footer page restaurant */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .logo_footer2 {
     filter: invert(100);
   padding-top: 15px;
@@ -962,7 +947,7 @@ img  {
   padding-bottom: 25px;
   position: relative;
   width: 10%;
-  right:600px;
+  right:00px;
 
   }
 }
@@ -988,10 +973,10 @@ img  {
 }
 
 
-@media (min-width: 990px) {
+@media (min-width: 768px) {
   .texte {
     text-align: center;
-    list-style-position: inside;
+   
 
   }
 
