@@ -35,14 +35,33 @@
   
     }
   }
+/*  floutage  indec pour loading spinner */
+.loader {
+  background: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  animation: loader 4s;
+  animation-fill-mode: both;
+  position: fixed;
 
+}
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
   /* Loading Spinner */
   .demo {
     width: 200px;
     margin: auto;
     position: relative;
     text-align: justify;
-    top: 30px;
+    top: 200px;
   }
 
   .custom-loading-spinner {
@@ -50,9 +69,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    animation: cssload-breathe 3.05s ease infinite;
+    animation-delay: 0.5s;
+
   }
 
   .custom-loading-spinner::before {
+    
     content: "";
     position: absolute;
     width: 100%;
@@ -88,6 +111,8 @@
     100% {
       transform: rotate(360deg);
       visibility: hidden;
+      background-color: white;
+
     }
   }
 
@@ -326,6 +351,7 @@ a:link {
     height: 100%;
     object-fit: fill;
     object-position: center bottom;
+    border-radius:0;
   }
 }
 
@@ -894,7 +920,7 @@ img  {
 @media (min-width: 990px) {
   .commander {
     position: relative;
-    
+    right: 5%;
     margin-bottom: 50px;
   }
 
