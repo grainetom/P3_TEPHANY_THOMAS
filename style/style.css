@@ -61,7 +61,7 @@
     margin: auto;
     position: relative;
     text-align: justify;
-    top: 200px;
+    top: 250px;
   }
 
   .custom-loading-spinner {
@@ -332,7 +332,19 @@ a:link {
     width:60%
   }
 }
+@media (min-width: 992px) {
 
+  .choisissez,
+  .composez,
+  .degustez {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 300px;
+    width:60%
+  }
+}
 /* Reglages images restaurants */
 
 .photo_resto {
@@ -351,7 +363,7 @@ a:link {
     height: 100%;
     object-fit: fill;
     object-position: center bottom;
-    border-radius:0;
+    border-radius:15px;
   }
 }
 
@@ -390,7 +402,22 @@ a:link {
   border-radius: 15px;
   box-shadow: 5px 5px 5px gray
 }
+/*  format resto 720px */
 
+@media (min-width: 768px) {
+  .restaurant1,
+.restaurant2,
+.restaurant3,
+.restaurant4 {
+  margin-top: 50px;
+  background-color: white;
+  font-size: 22px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px gray
+}
+}
 /* Ajout rectangle nouveau sur restaurant 1 et 2*/
 
 .nouveau {
@@ -422,7 +449,7 @@ a:link {
   right:60px;
 }
 /* Restaurant position pour Desktop */
-@media (min-width: 768px) {
+@media (min-width: 920px) {
 
   .restaurant1,
   .restaurant2,
@@ -432,7 +459,7 @@ a:link {
     display: inline-block;
     margin: 0 auto;
     width: 25%;
-    margin-left: 180px;
+    margin-left: 280px;
     margin-right: 80px;
     margin-bottom: 20px;
     height: 70%;
@@ -441,7 +468,7 @@ a:link {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .nouveau {
   font-family: roboto;
   align-content: flex-start;
@@ -456,10 +483,10 @@ a:link {
   font-weight: 700;
   z-index: 1;
   position: absolute;
-  top:700px;
-  right:61%;
+  top:40px;
+  right:55%;
   }
-.nouveau2 {
+.nouveau2 { 
   font-family: roboto;
   align-content: flex-start;
   display: inline-block;
@@ -475,6 +502,43 @@ a:link {
   position: absolute;
   top:700px;
   right:15%;
+}
+}
+
+@media (min-width: 992px) {
+  .nouveau {
+  font-family: roboto;
+  align-content: flex-start;
+  display: inline-block;
+  border: 1px solid #99e299;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  border-radius: 2px;
+  padding: 1px 10px;
+  margin: 5px;
+  z-index: auto;
+  font-weight: 700;
+  z-index: 1;
+  position: absolute;
+  top:750px;
+  right:66%;
+  }
+.nouveau2 {
+  font-family: roboto;
+  align-content: flex-start;
+  display: inline-block;
+  border: 1px solid #99e299;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  border-radius: 2px;
+  padding: 1px 10px;
+  margin: 5px;
+  z-index: auto;
+  font-weight: 700;
+  z-index: 1;
+  position: absolute;
+  top:750px;
+  right:27%;
 }
 }
 
@@ -520,24 +584,41 @@ img {
 
 }
 
-/* img version desktop */
+/* img version desktop 768px*/
 @media (min-width: 768px) {
 img  { 
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 500px;
+  border-radius: 25px;
   }
 }
 /* Nom restau desktop */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nom_resto {
     display: flex;
     align-items:center;
 
   }
 }
-
+@media (min-width: 992px) {
+  img  { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    }
+  }
+  /* Nom restau desktop */
+  @media (min-width: 992px) {
+    .nom_resto {
+      display: flex;
+      align-items:center;
+  
+    }
+  }
+/* img version 1080p */
 
 .metro {
   display: flex;
@@ -585,7 +666,7 @@ img  {
 
 }
 
-/* favori desktop */
+/* favori desktop 768px*/
 @media (min-width: 768px) {
   .favori {
     display: flex;
@@ -594,6 +675,7 @@ img  {
     left:90px;
   }
 }
+
 
 
 
@@ -721,14 +803,14 @@ img  {
 }
 
 .restaurant_menu:nth-child(2) {
-  animation: apparition 2s 0.4s backwards;
+  animation: apparition 2s 0.3s backwards;
 }
 .restaurant_menu:nth-child(3) {
-  animation: apparition 2s 0.2s backwards;
+  animation: apparition 2s 0.4s backwards;
 }
 
 .restaurant_menu:nth-child(4) {
-  animation: apparition 2s 0.4s backwards;
+  animation: apparition 2s 0.5s backwards;
 }
 
 .restaurant_menu:nth-child(5) {
@@ -736,7 +818,7 @@ img  {
 }
 
 .restaurant_menu:nth-child(6) {
-  animation: apparition 2s 0.6s backwards;
+  animation: apparition 2s 0.7s backwards;
 }
 
 @keyframes apparition {
@@ -926,6 +1008,13 @@ img  {
 
 
 }
+
+/* Footer mobile icones parteanaire et proposer */
+.partenaire , .proposer {
+
+
+ margin-left:60px;
+}
 /* couleur fond d'ecran et texte footer */
 .footeromf {
 
@@ -940,18 +1029,23 @@ img  {
   padding-top: 15px;
   padding-left: 25px;
   padding-bottom: 25px;
-  width: 25%;
-
+  width: 10%;
+  position: relative;
+  left: 50px;
 }
+
+
 .logo_footer2 {
 
   filter: invert(100);
   padding-top: 15px;
   padding-left: 25px;
   padding-bottom: 25px;
-  width: 25%;
-
+  width: 30%;
+  position: relative;
+  left: 50px;
 }
+
 @media (min-width: 768px) {
   .logo_footer {
     filter: invert(100);
@@ -959,11 +1053,13 @@ img  {
   padding-left: 25px;
   padding-bottom: 25px;
   position: relative;
-  right : 500px;
+  right : 605px;
   width: 10%;
 
   }
 }
+
+
 /* footer page restaurant */
 @media (min-width: 768px) {
   .logo_footer2 {
@@ -973,16 +1069,30 @@ img  {
   padding-bottom: 25px;
   position: relative;
   width: 10%;
-  right:00px;
+  right:100px;
 
   }
 }
+/* footer 1080p */
+@media (min-width: 992px) {
+  .logo_footer2 {
+    filter: invert(100);
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  width: 5%;
+  right:1000px;
+
+  }
+}
+
 /* footer avec séparation de 2 lignes entre chaque texte. */
 .texte_footer {
 
   font-family: roboto;
   line-height: 2;
-  padding-top: 25px;
+  padding-top:  5px;
   padding-bottom: 5px;
   padding-left: 25px;
 
