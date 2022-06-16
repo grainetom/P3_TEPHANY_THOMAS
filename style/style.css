@@ -32,7 +32,7 @@
     .restaurant {
       display: flex;
       flex-direction: row;
-  
+
     }
   }
 /*  floutage  indec pour loading spinner */
@@ -75,7 +75,7 @@
   }
 
   .custom-loading-spinner::before {
-    
+
     content: "";
     position: absolute;
     width: 100%;
@@ -404,7 +404,7 @@ a:link {
   font-weight: 700;
   position: absolute;
   right:40px;
-  
+
 }
 .nouveau2 {
   align-content: flex-end;
@@ -420,8 +420,45 @@ a:link {
   right:40px;
 }
 
+/* Restaurant mobile */
+@media (min-width:320px) and (max-width:768px)  {
+
+  .restaurant1,
+.restaurant2,
+.restaurant3,
+.restaurant4 {
+  background-color: white;
+  display: inline-block;
+  align-items: flex-start;
+
+  width: 25%;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  height: 70%;
+}
+}
+/* Restaurant 720p */
+@media (max-width:768px)  {
+  .restaurant1,
+.restaurant2,
+.restaurant3,
+.restaurant4 {
+  background-color: white;
+  align-items: flex-start;
+
+  width: 105%;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  height: 70%;
+}
+}
+
 /* Restaurant position pour Desktop */
-@media (min-width: 920px) {
+@media (min-width: 1080px) {
 
   .restaurant1,
   .restaurant2,
@@ -442,28 +479,12 @@ a:link {
   }
 }
 
-/*  format resto 720px */
 
-@media (min-width: 640px) and (max-width: 991px) {
-  .restaurant1,
-.restaurant2,
-.restaurant3,
-.restaurant4 {
-  background-color: white;
-  display: inline-block;
-  align-items: flex-start;
 
-  width: 50%;
-  margin-left: 15px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  height: 70%;
-}
-}
+
 
 /* Mode 1080p */
-@media (min-width: 992px)  {
+@media (min-width: 721px)  {
 
     .nouveau {
 
@@ -479,7 +500,7 @@ a:link {
       right:1490px;
       top:770px;
   }
-.nouveau2 { 
+.nouveau2 {
   font-family: roboto;
   display: inline-block;
   border: 1px solid #99e299;
@@ -535,11 +556,11 @@ a:link {
 
 
 
-/* 
+/*
 .restaurant2 {
 
 
-  
+
 }
 
 .restaurant3 {
@@ -578,7 +599,7 @@ img {
 
 /* img version desktop 768px*/
 @media (min-width: 768px) {
-img  { 
+img  {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -595,7 +616,7 @@ img  {
   }
 }
 @media (min-width: 992px) {
-  img  { 
+  img  {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -607,7 +628,7 @@ img  {
     .nom_resto {
       display: flex;
       align-items:center;
-  
+
     }
   }
 /* img version 1080p */
@@ -744,7 +765,7 @@ img  {
 }
 
 @media (min-width: 992px) {
-  
+
   .PLATS {
     display: block;
     float:none;
@@ -754,7 +775,7 @@ img  {
 }
 
 @media (min-width: 992px) {
-  
+
   .DESSERTS{
     display: block;
     float:right;
@@ -765,7 +786,7 @@ img  {
 }
 
 
-  
+
 
 /* Animation Menus  */
 
@@ -880,7 +901,7 @@ img  {
   position: absolute;
   right: 10px;
   margin-bottom: -21px;
-  
+
 
 
 }
@@ -904,6 +925,7 @@ img  {
   font-size: 27px;
   margin-top: 300px;
   border-radius: 10px 10px 10px 10px;
+  
 }
 
 /* resopal desktop */
@@ -1104,7 +1126,7 @@ img  {
 @media (min-width: 768px) {
   .texte {
     text-align: center;
-   
+
 
   }
 
