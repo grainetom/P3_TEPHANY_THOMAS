@@ -190,10 +190,16 @@ p {
 h3 {
   font-size: 20px;
   font-family: 'roboto';
-  text-align: left;
+  text-align: center;
   margin-left: 10px
 }
-
+h5 {
+  font-size: 20px;
+  font-family: 'roboto';
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
 /* h3 pour Desktop */
 @media (min-width: 768px) {
   h3 {
@@ -378,7 +384,7 @@ a:link {
   padding-top: 40px;
   padding-right: 30px;
   padding-left: 20px;
-  padding-bottom: 5px;
+  padding-bottom: -25px;
 
 }
 
@@ -421,24 +427,26 @@ a:link {
 }
 
 /* Restaurant mobile */
-@media (min-width:320px) and (max-width:768px)  {
 
-  .restaurant1,
+
+/* Restaurant mobile */
+
+.restaurant1,
 .restaurant2,
 .restaurant3,
 .restaurant4 {
   background-color: white;
   display: inline-block;
-  align-items: flex-start;
-
-  width: 25%;
-  margin-left: 15px;
-  margin-right: 10px;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 20px;
   padding-bottom: 20px;
   height: 70%;
+  border-radius: 15px;
 }
-}
+
 /* Restaurant 720p */
 @media (max-width:768px)  {
   .restaurant1,
@@ -448,9 +456,9 @@ a:link {
   background-color: white;
   align-items: flex-start;
 
-  width: 105%;
+  width: 100%;
   margin-left: 15px;
-  margin-right: 10px;
+  margin-right: 0px;
   margin-bottom: 20px;
   padding-bottom: 20px;
   height: 70%;
@@ -467,10 +475,10 @@ a:link {
     padding: 0;
     background-color: white;
     display: inline-block;
-    align-items: flex-start;
-    margin-left: 150px;
+    align-items: flex-end;
+    margin-left:80px;
     margin-right: 0px;
-    width: 15%;
+    width: 20%;
     margin-top: 40px;
     margin-bottom: 40px;
     padding-bottom:30px;
@@ -639,8 +647,8 @@ img  {
   margin-left: 10px;
   font-size: 20px;
   font-weight: 100;
-  margin-bottom: 0px;
-  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-top: 0px;
   color: black;
 }
 
@@ -669,7 +677,15 @@ img  {
 
 
 }
-
+/* favori mobile  3*/
+@media (max-width: 768px) {
+  .favori {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    left:200px;
+  }
+}
 /* favori desktop 768px*/
 @media (min-width: 768px) {
   .favori {
