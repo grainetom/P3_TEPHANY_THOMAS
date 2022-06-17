@@ -368,7 +368,7 @@ a:link {
   font-weight: 700;
   position: relative;
   bottom:280px;
-  left:350px;
+  left:300px;
  
   }
 
@@ -384,7 +384,7 @@ a:link {
   font-weight: 700;
   position: relative;
   bottom:280px;
-  left:350px;
+  left:300px;
 }
 }
 @media (min-width: 360px) and (max-width:990px) {
@@ -397,7 +397,7 @@ a:link {
     position: relative;
   }
 }
-  @media (min-width) (max-width:736px){
+  @media (min-width)and  (max-width:736px){
   .nouveau {
     font-family: roboto;
     align-content: flex-start;
@@ -451,8 +451,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:430px;
-  left:460px;
+  bottom:300px;
+  left:370px;
 }
 .nouveau2 {
 font-family: roboto;
@@ -465,8 +465,8 @@ padding: 1px 10px;
 margin: 5px;
 font-weight: 700;
 position: relative;
-bottom:430px;
-left:460px;
+bottom:300px;
+left:370px;
 }
 }
 .restaurant {
