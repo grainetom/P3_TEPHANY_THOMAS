@@ -427,9 +427,7 @@ a:link {
   border-radius: 2px;
   padding: 1px 10px;
   margin: 5px;
-  z-index: auto;
   font-weight: 700;
-  z-index: 2;
   position: relative;
   bottom:280px;
   left:270px;
@@ -444,9 +442,7 @@ a:link {
   border-radius: 2px;
   padding: 1px 10px;
   margin: 5px;
-  z-index: auto;
   font-weight: 700;
-  z-index: 1;
   position: relative;
   bottom:280px;
   left:270px;
@@ -480,9 +476,7 @@ a:link {
     border-radius: 2px;
     padding: 1px 10px;
     margin: 5px;
-    z-index: auto;
     font-weight: 700;
-    z-index: 2;
     position: relative;
   
     }
@@ -495,9 +489,7 @@ a:link {
     border-radius: 2px;
     padding: 1px 10px;
     margin: 5px;
-    z-index: auto;
     font-weight: 700;
-    z-index: 1;
     position: relative;
     
   }
@@ -514,8 +506,7 @@ a:link {
     padding: 0;
     background-color: white;
     display: inline-block;
-    align-items: flex-end;
-    margin-left:170px;
+        margin-left:170px;
     margin-right: 0px;
     width: 35%;
     margin-top: 40px;
@@ -547,9 +538,7 @@ color: #0a8d6d;
 border-radius: 2px;
 padding: 1px 10px;
 margin: 5px;
-z-index: auto;
 font-weight: 700;
-z-index: 1;
 position: relative;
 bottom:430px;
 left:460px;
