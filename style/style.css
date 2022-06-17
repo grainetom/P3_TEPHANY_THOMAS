@@ -345,15 +345,16 @@ a:link {
   }
 }
 /* Reglages images restaurants */
+@media (min-width: 0px) and (max-width: 360px) {
   .photo_resto {
-
   object-fit: fill;
   width: 100%;
   height: 100%;
   border-radius: 15px 15px 0 0;
   object-position: center bottom;
   position:relative;
-}
+}}
+@media  (max-width: 640px){
 .nouveau {
   font-family: roboto;
   align-content: flex-start;
@@ -366,7 +367,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  
+  bottom:280px;
+  left:350px;
  
   }
 
@@ -381,10 +383,11 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  
+  bottom:280px;
+  left:350px;
 }
-
-@media (max-width: 768px) {
+}
+@media (min-width: 360px) and (max-width:990px) {
   .photo_resto {
     width: 100%;
     height: 100%;
@@ -393,6 +396,8 @@ a:link {
     border-radius:15px;
     position: relative;
   }
+}
+  @media (min-width) (max-width:736px){
   .nouveau {
     font-family: roboto;
     align-content: flex-start;
@@ -405,9 +410,11 @@ a:link {
     margin: 5px;
     font-weight: 700;
     position: absolute;
-    left:1000px
+    left:300px;
   
     }
+  
+  
   .nouveau2 {
     font-family: roboto;
     display: inline-block;
@@ -421,8 +428,8 @@ a:link {
     position: absolute;
     
   }
+  }
 
-}
 @media (min-width: 992px) {
   
     .photo_resto {
