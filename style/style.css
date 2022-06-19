@@ -367,8 +367,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:280px;
-  left:300px;
+  bottom:240px;
+  left:240px;
  
   }
 
@@ -383,8 +383,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:280px;
-  left:300px;
+  bottom:240px;
+  left:240px;
 }
 }
 @media (min-width: 360px) and (max-width:990px) {
@@ -451,8 +451,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:300px;
-  left:370px;
+  bottom:400px;
+  left:460px;
 }
 .nouveau2 {
 font-family: roboto;
@@ -465,8 +465,8 @@ padding: 1px 10px;
 margin: 5px;
 font-weight: 700;
 position: relative;
-bottom:300px;
-left:370px;
+bottom:400px;
+left:460px;
 }
 }
 .restaurant {
@@ -666,8 +666,8 @@ img  {
   .favori {
     display: flex;
     align-items: flex-start;
-    position: relative;
-    left:200px;
+    position: absolute;
+    left:250px;
   }
 }
 /* favori desktop 768px*/
