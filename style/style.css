@@ -340,7 +340,7 @@ a:link {
     flex-direction: row;
     align-items: center;
     justify-content:flex-start;
-    margin-left: 300px;
+    margin-left: 400px;
     width:60%
   }
 }
@@ -367,8 +367,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:240px;
-  left:270px;
+  bottom:360px;
+  left:240px;
  
   }
 
@@ -383,8 +383,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:240px;
-  left:270px;
+  bottom:360px;
+  left:280px;
 }
 }
 @media (min-width: 360px) and (max-width:990px) {
@@ -451,7 +451,7 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:400px;
+  bottom:580px;
   left:460px;
 }
 .nouveau2 {
@@ -465,7 +465,7 @@ padding: 1px 10px;
 margin: 5px;
 font-weight: 700;
 position: relative;
-bottom:400px;
+bottom:580px;
 left:460px;
 }
 }
@@ -498,45 +498,50 @@ left:460px;
 /* Restaurant mobile */
 @media (min-width: 320px) and (max-width:770px) {
 
-.restaurant1,
-.restaurant2,
-.restaurant3,
-.restaurant4 {
-  background-color: white;
-  display: inline-block;
-  align-items: flex-end;
-  width: 100%;
-margin:auto;
-  padding-bottom: 20px;
-  height: 70%;
-  border-radius: 15px;
-}
-
-
-}
-
-
-/* Restaurant position pour Desktop */
-@media  (min-width: 992px) {
-
   .restaurant1,
   .restaurant2,
   .restaurant3,
   .restaurant4 {
-    padding: 0;
     background-color: white;
     display: inline-block;
-            margin-left:170px;
-    margin-right: 0px;
-    width: 35%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-bottom:30px;
-    border-radius: 15px;
+    align-items: flex-end;
+    width: 100%;
+  margin:auto;
+    padding-bottom: 20px;
     height: 70%;
+    border-radius: 15px;
   }
   
-}
+  
+  }
+  
+  
+  /* Restaurant position pour Desktop */
+  @media  (min-width: 992px) {
+  
+    .restaurant1,
+    .restaurant2,
+    .restaurant3,
+    .restaurant4 {
+      padding: 0;
+      background-color: white;
+      display: inline-block;
+              margin-left:170px;
+      margin-right: 0px;
+      width: 35%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding-bottom:30px;
+      border-radius: 15px;
+      height: 70%;
+    }
+    
+  }
+  
+  
+  
+
+
 
 
 
@@ -661,22 +666,22 @@ img  {
 
 
 }
-/* favori mobile  3*/
+/* favori mobile  */
 @media (max-width: 768px) {
   .favori {
     display: flex;
     align-items: flex-start;
     position: absolute;
-    left:250px;
+    left:450px;
   }
 }
-/* favori desktop 768px*/
-@media (min-width: 768px) {
+/* favori tablette 768px*/
+@media (min-width: 768px) and (max-width: 1670px) {
   .favori {
     display: flex;
     align-items: flex-start;
     position: relative;
-    right:200px;
+    right:50px;
   }
 }
 
@@ -686,7 +691,7 @@ img  {
     display: flex;
     align-items: flex-start;
     position: relative;
-    right:-70px;
+    left:600px;
   }
 }
 
