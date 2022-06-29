@@ -397,7 +397,7 @@ a:link {
     position: relative;
   }
 }
-  @media (min-width)and  (max-width:736px){
+  @media (min-width:640px)and  (max-width:736px){
   .nouveau {
     font-family: roboto;
     align-content: flex-start;
@@ -451,8 +451,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:580px;
-  left:460px;
+  top:-280px;
+  left:70px;
 }
 .nouveau2 {
 font-family: roboto;
@@ -465,8 +465,8 @@ padding: 1px 10px;
 margin: 5px;
 font-weight: 700;
 position: relative;
-bottom:580px;
-left:460px;
+top:-280px;
+left:100px;
 }
 }
 .restaurant {
@@ -514,7 +514,26 @@ left:460px;
   
   
   }
+   /* Restaurant position pour Tablettes */
+   @media  (min-width: 640px) and (max-width:991px) {
   
+    .restaurant1,
+    .restaurant2,
+    .restaurant3,
+    .restaurant4 {
+      padding: 0;
+      background-color: white;
+      display: inline-block;
+      margin-right: 100px;
+      margin-left: 70px;
+      width: 50%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding-bottom:30px;
+      border-radius: 15px;
+    }
+    
+  }
   
   /* Restaurant position pour Desktop */
   @media  (min-width: 992px) {
@@ -526,14 +545,10 @@ left:460px;
       padding: 0;
       background-color: white;
       display: inline-block;
-              margin-left:240px;
-      margin-right: 0px;
-      width: 35%;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      width:auto;
+      margin-left: 170px;
       padding-bottom:30px;
       border-radius: 15px;
-      height: 70%;
     }
     
   }
@@ -691,7 +706,7 @@ img  {
     display: flex;
     align-items: flex-start;
     position: relative;
-    left:600px;
+    left:150px;
   }
 }
 
