@@ -333,7 +333,7 @@ a:link {
     flex-direction: row;
     align-items: center;
     justify-content:flex-start;
-    margin-left: 400px;
+    margin-left:250px;
     width:60%
   }
 }
@@ -361,7 +361,7 @@ a:link {
   font-weight: 700;
   position: relative;
   bottom:280px;
-  left:100px;
+  left:80px;
 
   }
 
@@ -376,8 +376,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:280px;
-  left:140px;
+  bottom: 280px;
+  left:120px;
 }
 }
 @media (min-width: 360px) and (max-width:990px) {
@@ -538,13 +538,13 @@ left:100px;
       padding: 0;
       background-color: white;
       display: inline-block;
-      margin-left: 100px;
-      padding-bottom:20px;
+      margin-left:230px;
+      padding-bottom:10px;
       border-radius: 15px;
+      margin-bottom: 20px;
     }
 
   }
-
 
 
 
@@ -679,7 +679,7 @@ img  {
     display: flex;
     align-items: flex-start;
     position: absolute;
-    left:450px;
+    left:400px;
   }
 }
 /* favori tablette 768px*/
