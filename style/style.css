@@ -333,7 +333,7 @@ a:link {
     flex-direction: row;
     align-items: center;
     justify-content:flex-start;
-    margin-left:250px;
+    margin-left:300px;
     width:60%
   }
 }
@@ -469,9 +469,9 @@ left:100px;
   font-size: 22px;
   margin-left: 10px;
   margin-right: 0px;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-right: 30px;
-  padding-left: 20px;
+  padding-left: 100px;
   padding-bottom: 25px;
 
 }
@@ -538,7 +538,7 @@ left:100px;
       padding: 0;
       background-color: white;
       display: inline-block;
-      margin-left:230px;
+      margin-left:50px;
       padding-bottom:10px;
       border-radius: 15px;
       margin-bottom: 20px;
