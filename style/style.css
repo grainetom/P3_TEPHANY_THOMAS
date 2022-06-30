@@ -360,8 +360,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:280px;
-  left:80px;
+  bottom:250px;
+  left:60px;
 
   }
 
@@ -376,8 +376,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom: 280px;
-  left:120px;
+  bottom: 250px;
+  left:90px;
 }
 }
 @media (min-width: 360px) and (max-width:990px) {
@@ -679,7 +679,7 @@ img  {
     display: flex;
     align-items: flex-start;
     position: absolute;
-    left:400px;
+    left:250px;
   }
 }
 /* favori tablette 768px*/
