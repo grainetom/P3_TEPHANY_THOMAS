@@ -338,7 +338,7 @@ a:link {
   }
 }
 /* Reglages images restaurants */
-@media (min-width: 0px) and (max-width: 360px) {
+@media (max-width: 640px) {
   .photo_resto {
   object-fit: fill;
   width: 100%;
@@ -360,8 +360,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:280px;
-  left:120px;
+  bottom:320px;
+  left:200px;
 
   }
 
@@ -376,8 +376,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:280px;
-  left:160px;
+  bottom:320px;
+  left:230px;
 }
 }
 @media (min-width: 360px) and (max-width:990px) {
