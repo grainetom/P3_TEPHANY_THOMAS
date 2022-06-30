@@ -360,8 +360,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:320px;
-  left:200px;
+  bottom:280px;
+  left:100px;
 
   }
 
@@ -376,8 +376,8 @@ a:link {
   margin: 5px;
   font-weight: 700;
   position: relative;
-  bottom:320px;
-  left:230px;
+  bottom:280px;
+  left:140px;
 }
 }
 @media (min-width: 360px) and (max-width:990px) {
