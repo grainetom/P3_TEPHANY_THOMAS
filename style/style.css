@@ -820,13 +820,14 @@ img  {
 
 .restaurant_menu:hover .compo_menu_check_icon i {
   transform: rotate(360deg) translateX(-55%);
-  transition: ease-in-out 400ms;
+  transition: ease-in-out 1000ms;
 }
 
 .restaurant_menu:hover .prix {
 
   transform: translateX(-75px);
-  transition: ease-in-out 400ms;
+  /* accélération et décélération */
+  transition: ease-in-out 1000ms;
   opacity: 1;
 }
 
