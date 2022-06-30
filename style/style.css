@@ -36,7 +36,8 @@
   width: 100%;
   z-index: 99;
   animation: loader 4s;
-  /* La propriété animation-fill-mode indique la façon dont une animation CSS doit appliquer les styles à sa cible avant et après son exécution. */
+  /* La propriété animation-fill-mode indique la façon dont une animation CSS 
+  doit appliquer les styles à sa cible avant et après son exécution. */
   animation-fill-mode: both;
   position: fixed;
 
